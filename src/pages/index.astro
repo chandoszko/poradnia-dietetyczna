@@ -1,17 +1,74 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Strona główna">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-granat to-granat/90 text-biala py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Zdrowe odżywianie<br>na co dzień
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 text-mietowy max-w-2xl mx-auto">
+        Profesjonalne konsultacje dietetyczne. Indywidualne podejście do każdego pacjenta.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/kontakt" class="bg-limonka text-granat px-8 py-3 rounded-full font-bold text-lg hover:bg-morska-ziel transition-colors">
+          Umów wizytę
+        </a>
+        <a href="/uslugi" class="border-2 border-biala text-biala px-8 py-3 rounded-full font-bold text-lg hover:bg-biala hover:text-granat transition-colors">
+          Poznaj usługi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dlaczego ja -->
+  <section class="py-16 bg-mietowy/30">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-granat">Dlaczego warto?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-limonka rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-granat">Indywidualne podejście</h3>
+          <p class="text-granat/80">Każdy plan dietetyczny jest dostosowany do Twoich potrzeb i celów.</p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-limonka rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-granat">Szybkie efekty</h3>
+          <p class="text-granat/80">Widoczne rezultaty już po kilku tygodniach współpracy.</p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-limonka rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-granat">Wsparcie i motywacja</h3>
+          <p class="text-granat/80">Jestem z Tobą na każdym etapie zmiany nawyków żywieniowych.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-granat text-biala">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Gotowy na zmianę?</h2>
+      <p class="text-xl mb-8 text-mietowy">Umów konsultację i zacznij zdrowe odżywianie już dziś.</p>
+      <a href="/kontakt" class="inline-block bg-limonka text-granat px-8 py-3 rounded-full font-bold text-lg hover:bg-morska-ziel transition-colors">
+        Umów wizytę
+      </a>
+    </div>
+  </section>
+</Layout>

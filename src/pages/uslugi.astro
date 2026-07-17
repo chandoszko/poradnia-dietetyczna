@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Usługi">
+  <!-- Hero -->
+  <section class="bg-granat text-biala py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center">Usługi</h1>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Usługa 1 -->
+        <div class="bg-biala border border-mietowy rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 bg-limonka rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-granat">[Nazwa usługi 1]</h3>
+          <p class="text-granat/80 mb-4">[Krótki opis usługi — co zawiera, jak wygląda konsultacja]</p>
+          <p class="text-granat/80">[Dla kogo — np. dla osób chcących schudnąć, sportowców]</p>
+        </div>
+        
+        <!-- Usługa 2 -->
+        <div class="bg-biala border border-mietowy rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 bg-limonka rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-granat">[Nazwa usługi 2]</h3>
+          <p class="text-granat/80 mb-4">[Krótki opis usługi — co zawiera, jak wygląda konsultacja]</p>
+          <p class="text-granat/80">[Dla kogo — np. dla osób z chorobami, alergiami]</p>
+        </div>
+        
+        <!-- Usługa 3 -->
+        <div class="bg-biala border border-mietowy rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 bg-limonka rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-granat">[Nazwa usługi 3]</h3>
+          <p class="text-granat/80 mb-4">[Krótki opis usługi — co zawiera, jak wygląda konsultacja]</p>
+          <p class="text-granat/80">[Dla kogo — np. dla dzieci, seniorów]</p>
+        </div>
+        
+        <!-- Usługa 4 -->
+        <div class="bg-biala border border-mietowy rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 bg-limonka rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-granat">[Nazwa usługi 4]</h3>
+          <p class="text-granat/80 mb-4">[Krótki opis usługi — co zawiera, jak wygląda konsultacja]</p>
+          <p class="text-granat/80">[Dla kogo — np. dla firm, warsztaty]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-granat text-biala">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Która usługa jest dla Ciebie?</h2>
+      <p class="text-xl mb-8 text-mietowy">Umów bezpłatną konsultację telefoniczną.</p>
+      <a href="/kontakt" class="inline-block bg-limonka text-granat px-8 py-3 rounded-full font-bold text-lg hover:bg-morska-ziel transition-colors">
+        Zadzwoń
+      </a>
+    </div>
+  </section>
+</Layout>

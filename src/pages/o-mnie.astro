@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="O mnie">
+  <!-- Hero -->
+  <section class="bg-granat text-biala py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center">O mnie</h1>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Zdjęcie -->
+        <div class="order-2 md:order-1">
+          <div class="bg-mietowy rounded-2xl aspect-square flex items-center justify-center">
+            <span class="text-granat/50 text-lg">[Zdjęcie]</span>
+          </div>
+        </div>
+        
+        <!-- Tekst -->
+        <div class="order-1 md:order-2">
+          <h2 class="text-3xl font-bold mb-6 text-granat">[Imię i nazwisko]</h2>
+          <p class="text-lg mb-4 text-granat/80">
+            [Tytuł zawodowy — np. dietetyk kliniczny]
+          </p>
+          <p class="text-lg mb-6 text-granat/80">
+            [Krótki opis — 2-3 zdania o sobie, doświadczeniu, podejściu do pacjentów]
+          </p>
+          <p class="text-lg text-granat/80">
+            [Wykształcenie, certyfikaty, specjalizacje]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wartości -->
+  <section class="py-16 bg-mietowy/30">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-granat">Moje wartości</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <h3 class="text-xl font-semibold mb-2 text-granat">[Wartość 1]</h3>
+          <p class="text-granat/80">[Opis wartości]</p>
+        </div>
+        <div class="text-center p-6">
+          <h3 class="text-xl font-semibold mb-2 text-granat">[Wartość 2]</h3>
+          <p class="text-granat/80">[Opis wartości]</p>
+        </div>
+        <div class="text-center p-6">
+          <h3 class="text-xl font-semibold mb-2 text-granat">[Wartość 3]</h3>
+          <p class="text-granat/80">[Opis wartości]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
