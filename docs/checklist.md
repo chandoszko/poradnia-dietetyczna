@@ -1,28 +1,22 @@
 # Checklist — Poradnia Dietetyczna
 
-## Faza 0: Środowisko (1-2h)
-- [ ] Zainstalować Node.js 20+ → https://nodejs.org
-  - Sprawdź: `node -v` (powinno być v20.x.x lub wyżej)
-- [ ] Zainstalować Git → https://git-scm.com
-  - Sprawdź: `git --version`
-- [ ] Założyć konto GitHub → https://github.com
-- [ ] Założyć konto Cloudflare → https://cloudflare.com
-- [ ] Zainstalować OpenSpec: `npm install -g @fission-ai/openspec@latest`
-  - Sprawdź: `openspec --version`
-- [ ] Stworzyć folder projektu: `mkdir poradnia-dietetyczna && cd poradnia-dietetyczna`
-- [ ] Zainicjalizować Astro: `npm create astro@latest .`
-- [ ] Zainicjalizować OpenSpec: `openspec init`
-- [ ] Skonfigurować Tailwind CSS w Astro
-- [ ] Dodać config OpenSpec (z pliku config-openspec.yaml)
+## Faza 0: Środowisko (1-2h) ✅ ZAKOŃCZONA
+- [x] Zainstalować Node.js 24.15.0 ✅
+- [x] Zainstalować Git v2.55.0 ✅
+- [x] Założyć konto GitHub (chandoszko) ✅
+- [ ] Założyć konto Cloudflare (faza 3)
+- [x] Zainstalować VS Code v1.126.0 ✅
+- [x] Stworzyć folder projektu ✅
+- [x] Zainicjalizować Astro 7.x ✅
+- [x] Skonfigurować Tailwind CSS 4.x ✅
+- [x] Push kodu na GitHub ✅
 
-## Faza 1: Wywiad z Mamą (1h)
-- [ ] Umówić się na rozmowę z Mamą
-- [ ] Ustalić listę usług i cennik
-- [ ] Ustalić dane kontaktowe (adres, telefon, email, godziny otwarcia)
-- [ ] Ustalić kolory/ styl strony (inspiracje)
-- [ ] Zapytać o logo (czy Mama ma, czy trzeba zaprojektować)
-- [ ] Ustalić kiedy będą zdjęcia (po zmianie biura?)
-- [ ] Zapisać notatki z rozmowy
+## Faza 1: Wywiad z Mamą (1h) 🔄 W TRAKCIE
+- [x] Wysłać ankietę do mamy ✅ (17.07.2026)
+- [ ] Czekać na odpowiedź od mamy (⭐ NASTĘPNA CZYNNOŚĆ)
+- [x] Otrzymać paletę kolorów ✅ (Modern Greenery & Slate)
+- [ ] Ustalić logo (czekamy na mamę)
+- [ ] Zebrać zdjęcia (czekamy na mamę)
 
 ## Faza 2: Strona informacyjna MVP (4-6h)
 - [ ] Uruchomić OpenSpec: `/opsx:propose "strona poradni dietetycznej MVP"`
