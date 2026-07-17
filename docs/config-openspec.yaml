@@ -1,0 +1,39 @@
+# OpenSpec config — Poradnia Dietetyczna
+# Skopiuj do: poradnia-dietetyczna/openspec/config.yaml po init
+
+schema: spec-driven
+
+context: |
+  Projekt: Strona internetowa poradni dietetycznej
+  Stack: Astro 5.x, Tailwind CSS 4.x, TypeScript
+  Hosting: Cloudflare Pages
+  Język: polski (pl-PL)
+  
+  Struktura projektu:
+  - src/pages/ — podstrony Astro
+  - src/layouts/ — layout'y (BaseLayout.astro)
+  - src/components/ — komponenty (Header, Footer, ContactForm)
+  - src/styles/ — globalne style Tailwind
+  - public/ — statyczne zasoby (zdjęcia, favicon)
+  
+  Zasady:
+  - Mobile-first design (responsywność)
+  - Semantyczny HTML (header, main, footer, section, article)
+  - SEO: title, meta description, Open Graph tags na każdej podstronie
+  - Formularz kontaktowy: Cloudflare Workers lub Netlify Forms
+  - Brak zewnętrznych zależności JS (lekka strona)
+  - Zdjęcia w formacie WebP, lazy loading
+
+rules:
+  proposal:
+    - Uwzględnij kontekst Mamy (poradnia dietetyczna, nie startup tech)
+    - Określ grupę docelową (pacjenci szukający pomocy dietetycznej)
+  specs:
+    - Używaj GIVEN/WHEN/THEN dla scenariuszy
+    - Każda podstrona = osobna specyfikacja
+  design:
+    - Opisz strukturę plików przed implementacją
+    - Uwzględnij responsywność (mobile, tablet, desktop)
+  tasks:
+    - Każdy task = max 5 min pracy
+    - Zawieraj konkretne pliki do utworzenia/edytacji
