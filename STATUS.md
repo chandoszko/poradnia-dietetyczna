@@ -9,11 +9,13 @@
 | Element | Status |
 |---------|--------|
 | Node.js | ✅ Zainstalowany (v24.15.0) |
-| Git | ❌ **DO ZAINSTALOWANIA** |
-| Konto GitHub | ❌ Do założenia |
-| Konto Cloudflare | ❌ Do założenia |
+| Git | ✅ Zainstalowany (v2.55.0) |
+| VS Code | ✅ Zainstalowany (v1.126.0) |
+| Konto GitHub | ✅ Założone (chandoszko) |
+| Repozytorium | ✅ https://github.com/chandoszko/poradnia-dietetyczna |
+| Konto Cloudflare | ❌ Do założenia (faza 3) |
 | OpenSpec | ❌ Do zainstalowania |
-| Astro + Tailwind | ❌ Do zainicjalizowania |
+| Astro + Tailwind | ✅ Zainicjalizowane i na GitHubie |
 
 ---
 
@@ -41,7 +43,7 @@
 
 | Faza | Opis | Status |
 |------|------|--------|
-| **0** | Środowisko (Node, Git, GitHub, Cloudflare, OpenSpec) | 🔄 W trakcie |
+| **0** | Środowisko (Node, Git, GitHub, VS Code) | ✅ Zakończona |
 | **1** | Wywiad z Mamą (usługi, cennik, dane, styl) | ⏳ Do zrobienia |
 | **2** | Strona informacyjna MVP (Astro + Tailwind) | ⏳ Do zrobienia |
 | **3** | Deploy na Cloudflare Pages | ⏳ Do zrobienia |
@@ -54,11 +56,19 @@
 
 ```
 D:\ai\01 projekty\poradnia-dietetyczna\
-├── README.md              ← Opis projektu i stacku
-├── STATUS.md              ← Ten plik (kontynuacja po restarcie)
-└── docs\
-    ├── checklist.md       ← Szczegółowy checklist faz 0-4
-    └── config-openspec.yaml  ← Config OpenSpec do skopiowania
+├── src/
+│   ├── pages/
+│   │   └── index.astro        ← Główna strona
+│   └── styles/
+│       └── global.css         ← Style Tailwind
+├── public/                    ← Statyczne pliki (favicon)
+├── docs/
+│   ├── checklist.md           ← Szczegółowy checklist
+│   └── config-openspec.yaml   ← Config OpenSpec
+├── astro.config.mjs           ← Konfiguracja Astro
+├── package.json               ← Zależności
+├── README.md
+└── STATUS.md
 ```
 
 ---
@@ -77,9 +87,10 @@ D:\ai\01 projekty\poradnia-dietetyczna\
 
 | Element | Technologia |
 |---------|-------------|
-| Framework | Astro 5.x |
+| Framework | Astro 7.x |
 | Stylowanie | Tailwind CSS 4.x |
 | Język | TypeScript |
+| Edytor | VS Code |
 | Hosting | Cloudflare Pages (darmowy) |
-| Planowanie | OpenSpec (spec-driven) |
+| Repozytorium | GitHub |
 | AI | opencode (Claude) |
