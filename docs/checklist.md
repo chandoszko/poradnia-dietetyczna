@@ -11,24 +11,24 @@
 - [x] Skonfigurować Tailwind CSS 4.x ✅
 - [x] Push kodu na GitHub ✅
 
-## Faza 1: Wywiad z Mamą (1h) 🔄 W TRAKCIE
+## Faza 1: Wywiad z Mamą (1h) ✅ ZAKOŃCZONA (20.07.2026)
 - [x] Wysłać ankietę do mamy ✅ (17.07.2026)
-- [ ] Czekać na odpowiedź od mamy (⭐ NASTĘPNA CZYNNOŚĆ)
+- [x] Otrzymać odpowiedzi z ankiety ✅ (20.07.2026)
 - [x] Otrzymać paletę kolorów ✅ (Modern Greenery & Slate)
-- [ ] Ustalić logo (czekamy na mamę)
-- [ ] Zebrać zdjęcia (czekamy na mamę)
+- [ ] Logo — do wypracowania z mamą
+- [ ] Zdjęcie portretowe — mama wyśle jutro (21.07)
+- [ ] Zdjęcia gabinetu — systematycznie dosyłane
 
-## Faza 2: Strona informacyjna MVP (4-6h)
-- [ ] Uruchomić OpenSpec: `/opsx:propose "strona poradni dietetycznej MVP"`
-- [ ] Przejrzeć proposal.md i zweryfikować z notatkami z wywiadu
-- [ ] Zaimplementować stronę główną (index)
-- [ ] Zaimplementować podstronę "Oferta"
-- [ ] Zaimplementować podstronę "Kontakt"
-- [ ] Dodać nawigację (header) i stopkę (footer)
-- [ ] Sprawdzić responsywność (mobile, tablet, desktop)
-- [ ] Dodać SEO (title, meta description, Open Graph)
-- [ ] Przetestować formularz kontaktowy
-- [ ] Archiwizować change: `/opsx:archive`
+## Faza 2: Strona informacyjna MVP (4-6h) — PLAN PRACY
+- [ ] **2a: Strona główna** — hero z imieniem/titułem, "Dlaczego warto" (3 wartości), "Dla kogo" (seniorzy, choroby metaboliczne), CTA
+- [ ] **2b: Podstrona "O mnie"** — Elżbieta Chandoszko, tytuł, 3 akapity opisu, wykształcenie WUM, wartości (empatia, indywidualne podejście, skuteczność)
+- [ ] **2c: Podstrona "Usługi"** — 9 usług z ankiety w kartach (konsultacje, analiza składu ciała, jadłospisy, diety redukcyjne/metaboliczne/cukrzycowe)
+- [ ] **2d: Podstrona "Cennik"** — bez cen, info "Ceny ustalamy indywidualnie" + CTA kontakt
+- [ ] **2e: Podstrona "Kontakt"** — tel: 577 210 402, email: elzbietachan@gmail.com, adres: Dworcowa 25a Płock, formularz, BEZ godzin otwarcia
+- [ ] **2f: Layout** — footer z prawdziwymi danymi, logo tymczasowo tekstowe "Poradnia Dietetyczna"
+- [ ] **2g: SEO** — title, meta description, Open Graph na każdej stronie
+- [ ] Podmienić zdjęcie portretowe (jak mama wyśle ~21.07)
+- [ ] Dodać logo (jak będzie gotowe)
 
 ## Faza 3: Deploy (1-2h)
 - [ ] Zainicjalizować Git w projekcie
