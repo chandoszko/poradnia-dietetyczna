@@ -13,56 +13,42 @@ const { title } = Astro.props;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title} | Poradnia Dietetyczna</title>
-  <meta name="description" content="Poradnia dietetyczna - profesjonalne konsultacje dietetyczne, indywidualne jadłospisy, zdrowe odżywianie">
+  <title>{title} | Elżbieta Chandoszko - Dietetyk</title>
+  <meta name="description" content="Elżbieta Chandoszko - dietetyk w chorobach wewnętrznych i metabolicznych. Indywidualne plany żywieniowe, dietetyka kliniczna. Umów wizytę w Płocku.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-biala text-granat min-h-screen flex flex-col">
-  <!-- Header -->
-  <header class="bg-granat text-biala sticky top-0 z-50 shadow-lg">
-    <nav class="container mx-auto px-4 py-4">
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <a href="/" class="text-2xl font-bold hover:text-limonka transition-colors">
-          Poradnia Dietetyczna
-        </a>
-        
-        <!-- Desktop Navigation -->
-        <ul class="hidden md:flex space-x-8">
-          <li><a href="/" class="hover:text-limonka transition-colors">Strona główna</a></li>
-          <li><a href="/o-mnie" class="hover:text-limonka transition-colors">O mnie</a></li>
-          <li><a href="/uslugi" class="hover:text-limonka transition-colors">Usługi</a></li>
-          <li><a href="/cennik" class="hover:text-limonka transition-colors">Cennik</a></li>
-          <li><a href="/kontakt" class="hover:text-limonka transition-colors">Kontakt</a></li>
-        </ul>
-        
-        <!-- CTA Button -->
-        <a href="/kontakt" class="hidden md:block bg-limonka text-granat px-6 py-2 rounded-full font-semibold hover:bg-morska-ziel transition-colors">
-          Umów wizytę
-        </a>
-        
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="md:hidden text-biala">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-      
-      <!-- Mobile Navigation -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-        <ul class="flex flex-col space-y-4">
-          <li><a href="/" class="block hover:text-limonka transition-colors">Strona główna</a></li>
-          <li><a href="/o-mnie" class="block hover:text-limonka transition-colors">O mnie</a></li>
-          <li><a href="/uslugi" class="block hover:text-limonka transition-colors">Usługi</a></li>
-          <li><a href="/cennik" class="block hover:text-limonka transition-colors">Cennik</a></li>
-          <li><a href="/kontakt" class="block hover:text-limonka transition-colors">Kontakt</a></li>
-        </ul>
-        <a href="/kontakt" class="block mt-4 bg-limonka text-granat px-6 py-2 rounded-full font-semibold text-center hover:bg-morska-ziel transition-colors">
-          Umów wizytę
-        </a>
-      </div>
-    </nav>
-  </header>
+<body class="bg-biala text-text-body min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-[72px]">
+      <a href="#hero" class="flex items-center gap-2 font-bold text-[1.3rem]">
+        <span class="text-limonka text-[1.6rem]">&#9752;</span>
+        <span class="font-heading text-granat">Elżbieta Chandoszko</span>
+      </a>
+      <button class="nav-toggle md:hidden flex flex-col gap-[5px] bg-none border-none cursor-pointer p-1" id="navToggle" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-granat transition-all rounded-sm"></span>
+        <span class="block w-6 h-0.5 bg-granat transition-all rounded-sm"></span>
+        <span class="block w-6 h-0.5 bg-granat transition-all rounded-sm"></span>
+      </button>
+      <ul class="nav-links hidden md:flex items-center gap-8" id="navLinks">
+        <li><a href="#uslugi" class="text-text-body font-medium text-[0.9rem] relative">Czym się zajmuję</a></li>
+        <li><a href="#o-mnie" class="text-text-body font-medium text-[0.9rem] relative">O mnie</a></li>
+        <li><a href="#jak-pracuje" class="text-text-body font-medium text-[0.9rem] relative">Jak pracuję</a></li>
+        <li><a href="#kontakt" class="text-text-body font-medium text-[0.9rem] relative">Kontakt</a></li>
+        <li><a href="#kontakt" class="btn-primary px-5 py-2 rounded-lg font-bold text-[0.85rem]">Umów wizytę</a></li>
+      </ul>
+    </div>
+    <!-- Mobile menu -->
+    <div class="hidden md:hidden absolute top-[72px] left-0 w-full bg-biala flex-col p-6 gap-4 border-b border-border shadow-lg" id="mobileMenu">
+      <a href="#uslugi" class="block text-granat font-medium text-base">Czym się zajmuję</a>
+      <a href="#o-mnie" class="block text-granat font-medium text-base">O mnie</a>
+      <a href="#jak-pracuje" class="block text-granat font-medium text-base">Jak pracuję</a>
+      <a href="#kontakt" class="block text-granat font-medium text-base">Kontakt</a>
+      <a href="#kontakt" class="block btn-primary text-center font-bold text-[0.9rem] mt-2">Umów wizytę</a>
+    </div>
+  </nav>
 
   <!-- Main Content -->
   <main class="flex-grow">
@@ -70,52 +56,113 @@ const { title } = Astro.props;
   </main>
 
   <!-- Footer -->
-  <footer class="bg-granat text-biala py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Logo i opis -->
+  <footer class="bg-granat text-white/70 pt-16 pb-8">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-white/10">
+        <!-- About -->
         <div>
-          <h3 class="text-2xl font-bold mb-4">Poradnia Dietetyczna</h3>
-          <p class="text-mietowy">Profesjonalne konsultacje dietetyczne. Zdrowe odżywianie na co dzień.</p>
+          <a href="#hero" class="flex items-center gap-2 font-bold text-xl mb-4">
+            <span class="text-limonka text-2xl">&#9752;</span>
+            <span class="font-heading text-white">Elżbieta Chandoszko</span>
+          </a>
+          <p class="text-sm leading-relaxed">Dietetyczka. Pomagam jeść mądrze i czuć się dobrze — bez wyrzeczeń i głodówek.</p>
         </div>
-        
-        <!-- Linki -->
+        <!-- Strona -->
         <div>
-          <h4 class="text-lg font-semibold mb-4">Nawigacja</h4>
+          <h4 class="text-white text-base font-semibold mb-4">Strona</h4>
           <ul class="space-y-2">
-            <li><a href="/" class="text-mietowy hover:text-limonka transition-colors">Strona główna</a></li>
-            <li><a href="/o-mnie" class="text-mietowy hover:text-limonka transition-colors">O mnie</a></li>
-            <li><a href="/uslugi" class="text-mietowy hover:text-limonka transition-colors">Usługi</a></li>
-            <li><a href="/cennik" class="text-mietowy hover:text-limonka transition-colors">Cennik</a></li>
-            <li><a href="/kontakt" class="text-mietowy hover:text-limonka transition-colors">Kontakt</a></li>
+            <li><a href="#uslugi" class="text-white/55 text-sm footer-link transition-colors">Czym się zajmuję</a></li>
+            <li><a href="#o-mnie" class="text-white/55 text-sm footer-link transition-colors">O mnie</a></li>
+            <li><a href="#jak-pracuje" class="text-white/55 text-sm footer-link transition-colors">Jak pracuję</a></li>
+            <li><a href="#kontakt" class="text-white/55 text-sm footer-link transition-colors">Kontakt</a></li>
           </ul>
         </div>
-        
-        <!-- Kontakt -->
+        <!-- Specjalizacje -->
         <div>
-          <h4 class="text-lg font-semibold mb-4">Kontakt</h4>
-          <ul class="space-y-2 text-mietowy">
-            <li>Telefon: <a href="tel:+48000000000" class="hover:text-limonka transition-colors">+48 000 000 000</a></li>
-            <li>Email: <a href="mailto:kontakt@poradnia.pl" class="hover:text-limonka transition-colors">kontakt@poradnia.pl</a></li>
-            <li>Adres: ul. Przykładowa 1, 00-000 Warszawa</li>
+          <h4 class="text-white text-base font-semibold mb-4">Specjalizacje</h4>
+          <ul class="space-y-2">
+            <li><a href="#uslugi" class="text-white/55 text-sm footer-link transition-colors">Dietetyka kliniczna</a></li>
+            <li><a href="#uslugi" class="text-white/55 text-sm footer-link transition-colors">Choroby metaboliczne</a></li>
+            <li><a href="#uslugi" class="text-white/55 text-sm footer-link transition-colors">Redukcja masy ciała</a></li>
+          </ul>
+        </div>
+        <!-- Informacje -->
+        <div>
+          <h4 class="text-white text-base font-semibold mb-4">Informacje</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-white/55 text-sm footer-link transition-colors">Polityka prywatności</a></li>
+            <li><a href="#" class="text-white/55 text-sm footer-link transition-colors">RODO</a></li>
           </ul>
         </div>
       </div>
-      
-      <!-- Copyright -->
-      <div class="border-t border-morska-ziel mt-8 pt-8 text-center text-mietowy">
-        <p>&copy; {new Date().getFullYear()} Poradnia Dietetyczna. Wszelkie prawa zastrzeżone.</p>
+      <div class="pt-6 text-center text-sm text-white/35">
+        <p>&copy; {new Date().getFullYear()} Elżbieta Chandoszko — Dietetyk. Wszelkie prawa zastrzeżone.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Mobile Menu Script -->
+  <!-- Scripts -->
   <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    mobileMenuButton?.addEventListener('click', () => {
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a:not(.btn-primary)');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar?.classList.add('scrolled');
+      } else {
+        navbar?.classList.remove('scrolled');
+      }
+
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = (section as HTMLElement).offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id') || '';
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    navToggle?.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
       mobileMenu?.classList.toggle('hidden');
+      mobileMenu?.classList.toggle('flex');
+    });
+
+    mobileMenu?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle?.classList.remove('active');
+        mobileMenu?.classList.add('hidden');
+        mobileMenu?.classList.remove('flex');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (this: HTMLElement, e: Event) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href') || '');
+        if (target) {
+          const offset = 80;
+          const targetPosition = (target as HTMLElement).getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
     });
   </script>
 </body>

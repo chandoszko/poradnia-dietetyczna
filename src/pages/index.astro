@@ -3,93 +3,266 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Strona główna">
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-granat to-granat/90 text-biala py-20">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">
-        Zdrowe odżywianie<br>na co dzień
-      </h1>
-      <p class="text-xl md:text-2xl mb-8 text-mietowy max-w-2xl mx-auto">
-        Zdrowe odżywianie. Indywidualne podejście do każdego pacjenta.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/kontakt" class="bg-limonka text-granat px-8 py-3 rounded-full font-bold text-lg hover:bg-morska-ziel transition-colors">
-          Umów wizytę
-        </a>
-        <a href="/uslugi" class="border-2 border-biala text-biala px-8 py-3 rounded-full font-bold text-lg hover:bg-biala hover:text-granat transition-colors">
-          Poznaj usługi
-        </a>
+  <!-- Hero -->
+  <section class="relative pt-[140px] pb-[100px] min-h-screen flex items-center overflow-hidden" id="hero"
+    style="background: linear-gradient(160deg, #FFFFFF 0%, #dceee6 50%, #B2D4C7 100%);">
+    <div class="absolute bottom-0 left-0 w-full h-20 bg-biala" style="clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);"></div>
+    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-[60px] items-center relative z-10">
+      <div>
+        <p class="text-morska-ziel-dark font-semibold text-[0.95rem] uppercase tracking-[2px] mb-4">Dietetyczka</p>
+        <h1 class="font-heading text-[3.2rem] leading-[1.2] text-granat mb-6">
+          Cześć, jestem <br><span class="highlight">Elżbieta Chandoszko</span>
+        </h1>
+        <p class="text-[1.1rem] text-text-body mb-8 max-w-[520px]">
+          Pomogę Ci odzyskać kontrolę nad zdrowiem i samopoczuciem. Razem ułożymy sposób odżywiania, który będzie pasował do Twojego życia — bez restrykcyjnych diet i wyrzeczeń.
+        </p>
+        <div class="flex gap-4 flex-wrap mb-12">
+          <a href="#kontakt" class="btn-primary px-8 py-4 text-[1.05rem]">Umów się na wizytę</a>
+          <a href="#uslugi" class="btn-outline px-8 py-4 text-[1.05rem]">Dowiedz się więcej</a>
+        </div>
+        <div class="flex gap-10">
+          <div class="flex flex-col">
+            <span class="text-[1.8rem] font-bold text-granat font-heading">4+</span>
+            <span class="text-[0.8rem] text-text-muted font-medium">Lata doświadczenia</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-[1.8rem] font-bold text-granat font-heading">9</span>
+            <span class="text-[0.8rem] text-text-muted font-medium">Specjalizacji</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-[1.8rem] font-bold text-granat font-heading">WUM</span>
+            <span class="text-[0.8rem] text-text-muted font-medium">Wykształcenie</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Dlaczego ja -->
-  <section class="py-16 bg-mietowy/30">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12 text-granat">Dlaczego warto?</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center p-6">
-          <div class="w-16 h-16 bg-limonka rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 text-granat">Indywidualne podejście</h3>
-          <p class="text-granat/80">Każdy plan dietetyczny jest dostosowany do Twoich potrzeb i celów.</p>
-        </div>
-        
-        <div class="text-center p-6">
-          <div class="w-16 h-16 bg-limonka rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 text-granat">Szybkie efekty</h3>
-          <p class="text-granat/80">Widoczne rezultaty już po kilku tygodniach współpracy.</p>
-        </div>
-        
-        <div class="text-center p-6">
-          <div class="w-16 h-16 bg-limonka rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8 text-granat" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 text-granat">Wsparcie i motywacja</h3>
-          <p class="text-granat/80">Jestem z Tobą na każdym etapie zmiany nawyków żywieniowych.</p>
+      <div class="hero-image">
+        <div class="hero-image-placeholder h-[450px] shadow-lg">
+          <div class="text-[4rem] mb-4">&#127822;</div>
+          <p class="text-[1.1rem] font-medium leading-relaxed">Zdrowe odżywianie<br>to inwestycja w siebie</p>
         </div>
       </div>
     </div>
   </section>
-  
-<!-- Opinie -->
-<section class="py-16 bg-mietowy/30">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12 text-granat">Co mówią pacjenci?</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-biala p-6 rounded-2xl shadow-md">
-        <p class="text-granat/80 mb-4">"[Schudłem jak marzenie]"</p>
-        <p class="font-semibold text-granat">— [Bartosz Chandoszko]</p>
+
+  <!-- Usługi -->
+  <section class="relative py-[100px] bg-biala" id="uslugi">
+    <div class="absolute bottom-0 left-0 w-full h-20 bg-mietowy-light" style="clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 100%);"></div>
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="text-center max-w-[640px] mx-auto mb-[60px]">
+        <p class="text-morska-ziel-dark font-semibold text-[0.9rem] uppercase tracking-[2px] mb-2">Czym się zajmuję</p>
+        <h2 class="font-heading text-[2.4rem] text-granat mb-4">W czym mogę Ci pomóc?</h2>
+        <p class="text-text-body text-[1.05rem]">Specjalizuję się w dietetyce klinicznej i metabolicznej. Każdego pacjenta traktuję indywidualnie — bo nie ma dwóch takich samych organizmów.</p>
       </div>
-      <div class="bg-biala p-6 rounded-2xl shadow-md">
-        <p class="text-granat/80 mb-4">"[Treść opinii 2]"</p>
-        <p class="font-semibold text-granat">— [Imię pacjenta]</p>
-      </div>
-      <div class="bg-biala p-6 rounded-2xl shadow-md">
-        <p class="text-granat/80 mb-4">"[Treść opinii 3]"</p>
-        <p class="font-semibold text-granat">— [Imię pacjenta]</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Usługa 1 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#128269;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Konsultacja dietetyczna</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Szczegółowy wywiad żywieniowy i zdrowotny. Analiza składu ciała, omówienie celów i planu działania.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Pierwsza wizyta</span>
+        </div>
+
+        <!-- Usługa 2 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#128197;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Wizyta kontrolna</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Monitorowanie postępów, korekta planu żywieniowego, omówienie trudności i motywacja do dalszych zmian.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Kontrola</span>
+        </div>
+
+        <!-- Usługa 3 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#128207;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Analiza składu ciała</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Profesjonalny pomiar metodą BIA. Dokładne dane o masie mięśniowej, tłuszczowej i nawodnieniu organizmu.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Diagnostyka</span>
+        </div>
+
+        <!-- Usługa 4 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#127860;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Indywidualny jadłospis</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Plan żywieniowy dopasowany do Twoich potrzeb, preferencji smakowych i wyników badań. Z przepisami i listą zakupów.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Planowanie</span>
+        </div>
+
+        <!-- Usługa 5 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#9878;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Dieta redukcyjna</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Skuteczne i trwałe odchudzanie bez efektu jojo. Zmiana nawyków żywieniowych zamiast restrykcyjnych diet.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Redukcja</span>
+        </div>
+
+        <!-- Usługa 6 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9 relative overflow-hidden">
+          <div class="absolute top-4 right-4 bg-limonka text-granat text-[0.75rem] font-bold px-3 py-1 rounded-full">Najczęściej wybierana</div>
+          <div class="text-[2.8rem] mb-4">&#128138;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Dieta w chorobach metabolicznych</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Specjalistyczne wsparcie żywieniowe w cukrzycy, insulinooporności, nadciśnieniu i chorobach serca.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Kliniczna</span>
+        </div>
+
+        <!-- Usługa 7 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#128170;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Dieta na przyrost masy mięśniowej</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Żywienie wspierające budowę mięśni. Optymalny rozkład białka, węglowodanów i tłuszczów dla Twojego celu.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Fitness</span>
+        </div>
+
+        <!-- Usługa 8 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#128138;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Dieta dla cukrzyków typu II</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Stabilizacja poziomu glukozy poprzez mądrą dietę o niskim indeksie glikemicznym. Współpraca z lekarzem.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Cukrzyca</span>
+        </div>
+
+        <!-- Usługa 9 -->
+        <div class="service-card bg-biala border border-border-light rounded-xl p-9">
+          <div class="text-[2.8rem] mb-4">&#128154;</div>
+          <h3 class="text-[1.15rem] font-semibold text-granat mb-3">Dieta w chorobach wewnętrznych</h3>
+          <p class="text-text-body text-[0.9rem] mb-4 leading-relaxed">Kompleksowe wsparcie dietetyczne w chorobach przewlekłych. Indywidualne podejście do każdego przypadku.</p>
+          <span class="inline-block font-bold text-granat text-[0.85rem] bg-mietowy-light px-3 py-1 rounded">Wewnętrzne</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- CTA Section -->
-  <section class="py-16 bg-granat text-biala">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-4">Gotowy na zmianę?</h2>
-      <p class="text-xl mb-8 text-mietowy">Umów konsultację i zacznij zdrowe odżywianie już dziś.</p>
-      <a href="/kontakt" class="inline-block bg-limonka text-granat px-8 py-3 rounded-full font-bold text-lg hover:bg-morska-ziel transition-colors">
-        Umów wizytę
-      </a>
+  <!-- O mnie -->
+  <section class="relative py-[100px] bg-mietowy-light" id="o-mnie">
+    <div class="absolute bottom-0 left-0 w-full h-20 bg-biala" style="clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);"></div>
+    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-[60px] items-center">
+      <div class="order-2 md:order-1">
+        <div class="about-image-placeholder h-[450px] shadow-lg">
+          <div class="w-[100px] h-[100px] bg-granat text-limonka rounded-full flex items-center justify-center text-[3rem] font-heading font-bold mb-4">EC</div>
+          <p class="text-[1.1rem] font-medium leading-relaxed">Elżbieta Chandoszko<br>Dietetyczka</p>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <p class="text-morska-ziel-dark font-semibold text-[0.9rem] uppercase tracking-[2px] mb-2">Poznaj mnie</p>
+        <h2 class="font-heading text-[2.4rem] text-granat mb-4">Kilka słów o mnie</h2>
+        <p class="text-text-body mb-6 text-[1.05rem] leading-relaxed">
+          Jestem dietetyczką w chorobach wewnętrznych i metabolicznych. Pomagam skutecznie zadbać o zdrowie — nie tylko schudnąć, ale także trwale zmienić nawyki żywieniowe bez efektu jo-jo.
+        </p>
+        <p class="text-text-body mb-6 text-[1.05rem] leading-relaxed">
+          Wspieram osoby po zawale, osoby z przewlekłymi chorobami metabolicznymi, a także te, które chcą zrzucić zbędne kilogramy. Jestem absolwentką studiów podyplomowych Warszawskiego Uniwersytetu Medycznego.
+        </p>
+        <div class="flex flex-col gap-5">
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 bg-limonka text-granat rounded-full flex items-center justify-center font-bold text-[0.85rem] mt-0.5">&#10003;</span>
+            <div>
+              <h4 class="font-semibold text-granat text-base mb-1">Wykształcenie i certyfikaty</h4>
+              <p class="text-text-body text-[0.9rem]">Studia podyplomowe WUM — Dietetyka w chorobach wewnętrznych i metabolicznych. Regularne szkolenia z psychodietetyki.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 bg-limonka text-granat rounded-full flex items-center justify-center font-bold text-[0.85rem] mt-0.5">&#10003;</span>
+            <div>
+              <h4 class="font-semibold text-granat text-base mb-1">Empatia i indywidualne podejście</h4>
+              <p class="text-text-body text-[0.9rem]">Mam w sobie dużo empatii, dlatego rozumiem zarówno młodych ludzi, jak i osoby dojrzałe. Dostosowuję program do potrzeb danej osoby.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="flex-shrink-0 w-8 h-8 bg-limonka text-granat rounded-full flex items-center justify-center font-bold text-[0.85rem] mt-0.5">&#10003;</span>
+            <div>
+              <h4 class="font-semibold text-granat text-base mb-1">Doświadczenie kliniczne</h4>
+              <p class="text-text-body text-[0.9rem]">4 lata doświadczenia w pracy z osobami 40 i 50+, oraz osobami po przebytym zawale serca.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jak pracuję -->
+  <section class="relative py-[100px] bg-biala" id="jak-pracuje">
+    <div class="absolute bottom-0 left-0 w-full h-20 bg-mietowy-light" style="clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);"></div>
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="text-center max-w-[640px] mx-auto mb-[60px]">
+        <p class="text-morska-ziel-dark font-semibold text-[0.9rem] uppercase tracking-[2px] mb-2">Jak to wygląda</p>
+        <h2 class="font-heading text-[2.4rem] text-granat mb-4">Jak wygląda współpraca?</h2>
+        <p class="text-text-body text-[1.05rem]">Wizyty odbywają się w moim gabinecie w Płocku. Oto czego możesz się spodziewać.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        <!-- Linia łącząca kroki -->
+        <div class="hidden lg:block absolute top-7 left-[10%] w-[80%] h-0.5 z-0"
+          style="background: linear-gradient(90deg, #B5C935, #88B2A1);"></div>
+
+        <!-- Krok 1 -->
+        <div class="text-center relative z-10">
+          <div class="w-14 h-14 mx-auto mb-5 bg-limonka text-granat rounded-full flex items-center justify-center text-[1.3rem] font-bold font-heading shadow-[0_4px_12px_rgba(181,201,53,0.3)]">1</div>
+          <h3 class="font-semibold text-granat text-[1.05rem] mb-2">Umawiasz wizytę</h3>
+          <p class="text-text-body text-[0.88rem] leading-relaxed">Zadzwoń lub napisz. Wybierasz wygodny termin. Pierwsza wizyta trwa około 60 minut.</p>
+        </div>
+
+        <!-- Krok 2 -->
+        <div class="text-center relative z-10">
+          <div class="w-14 h-14 mx-auto mb-5 bg-limonka text-granat rounded-full flex items-center justify-center text-[1.3rem] font-bold font-heading shadow-[0_4px_12px_rgba(181,201,53,0.3)]">2</div>
+          <h3 class="font-semibold text-granat text-[1.05rem] mb-2">Spotykamy się w gabinecie</h3>
+          <p class="text-text-body text-[0.88rem] leading-relaxed">Przeprowadzam szczegółowy wywiad żywieniowy i zdrowotny. Wykonuję analizę składu ciała.</p>
+        </div>
+
+        <!-- Krok 3 -->
+        <div class="text-center relative z-10">
+          <div class="w-14 h-14 mx-auto mb-5 bg-limonka text-granat rounded-full flex items-center justify-center text-[1.3rem] font-bold font-heading shadow-[0_4px_12px_rgba(181,201,53,0.3)]">3</div>
+          <h3 class="font-semibold text-granat text-[1.05rem] mb-2">Przygotowuję plan</h3>
+          <p class="text-text-body text-[0.88rem] leading-relaxed">Tworzę indywidualny plan żywieniowy z konkretnymi przepisami i listą zakupów.</p>
+        </div>
+
+        <!-- Krok 4 -->
+        <div class="text-center relative z-10">
+          <div class="w-14 h-14 mx-auto mb-5 bg-limonka text-granat rounded-full flex items-center justify-center text-[1.3rem] font-bold font-heading shadow-[0_4px_12px_rgba(181,201,53,0.3)]">4</div>
+          <h3 class="font-semibold text-granat text-[1.05rem] mb-2">Wspólnie realizujemy cele</h3>
+          <p class="text-text-body text-[0.88rem] leading-relaxed">Na wizytach kontrolnych monitorujemy postępy, modyfikujemy plan i rozwiązujemy trudności.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="relative py-[100px] bg-mietowy-light" id="kontakt">
+    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-[60px] items-start">
+      <div>
+        <p class="text-morska-ziel-dark font-semibold text-[0.9rem] uppercase tracking-[2px] mb-2">Zapraszam do kontaktu</p>
+        <h2 class="font-heading text-[2.4rem] text-granat mb-4">Gdzie mnie znajdziesz</h2>
+        <p class="text-text-body mb-8">Masz pytania przed wizytą? Zadzwoń lub napisz — chętnie odpowiem.</p>
+
+        <div class="flex flex-col gap-6">
+          <div class="flex gap-4 items-start">
+            <span class="text-[1.5rem] flex-shrink-0 mt-0.5">&#128205;</span>
+            <div>
+              <strong class="block mb-1 text-[0.95rem] text-granat">Gabinet</strong>
+              <p class="text-text-body text-[0.9rem]">ul. Dworcowa 25a<br>Płock</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-[1.5rem] flex-shrink-0 mt-0.5">&#128222;</span>
+            <div>
+              <strong class="block mb-1 text-[0.95rem] text-granat">Telefon</strong>
+              <p class="text-text-body text-[0.9rem]"><a href="tel:+48577210402" class="text-morska-ziel-dark font-medium hover:text-granat">+48 577 210 402</a></p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-[1.5rem] flex-shrink-0 mt-0.5">&#9993;</span>
+            <div>
+              <strong class="block mb-1 text-[0.95rem] text-granat">E-mail</strong>
+              <p class="text-text-body text-[0.9rem]"><a href="mailto:elzbietachan@gmail.com" class="text-morska-ziel-dark font-medium hover:text-granat">elzbietachan@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-gradient-to-br from-mietowy to-morska-ziel rounded-xl h-[400px] flex flex-col items-center justify-center text-center text-granat gap-3">
+          <div class="text-[3rem]">&#128506;</div>
+          <p class="font-semibold text-[1.05rem] leading-relaxed">ul. Dworcowa 25a<br>Płock</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn-outline px-5 py-2 text-[0.85rem] mt-2">Otwórz w Google Maps</a>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
