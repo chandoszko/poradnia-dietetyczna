@@ -1,6 +1,6 @@
 # STATUS — Poradnia Dietetyczna
 
-**Data ostatniej aktualizacji:** 2026-07-20 (wieczór)
+**Data ostatniej aktualizacji:** 2026-07-21 (wieczór)
 
 ---
 
@@ -13,7 +13,7 @@
 | VS Code | ✅ Zainstalowany (v1.126.0) |
 | Konto GitHub | ✅ Założone (chandoszko) |
 | Repozytorium | ✅ https://github.com/chandoszko/poradnia-dietetyczna |
-| Konto Cloudflare | ❌ Do założenia (faza 3) |
+| Konto Cloudflare | ✅ Założone |
 | Astro + Tailwind | ✅ Zainicjalizowane i na GitHubie |
 | Ankieta mamy | ✅ Odpowiedzi odebrane (20.07.2026) |
 
@@ -25,8 +25,8 @@
 |------|------|--------|
 | **0** | Środowisko (Node, Git, GitHub, VS Code) | ✅ Zakończona |
 | **1** | Wywiad z Mamą (ankieta, kolory, dane) | ✅ Zakończona (20.07.2026) |
-| **2** | Strona informacyjna MVP — design Claude na branchu `test-claude-design` | 🔧 W trakcie — design gotowy, do wdrożenia na main |
-| **3** | Deploy na Cloudflare Pages | ⏳ Do zrobienia |
+| **2** | Strona informacyjna MVP — design Claude na branchu `test-claude-design` | ✅ Zakończona (21.07.2026) |
+| **3** | Deploy na Cloudflare Pages | ✅ Zakończona (21.07.2026) — https://poradnia-dietetyczna.pages.dev |
 | **4** | Wykończenie (favicon, SEO, Lighthouse) | ⏳ Do zrobienia |
 | **5** | Wykupienie domeny | ⏳ Do zrobienia |
 
@@ -69,16 +69,17 @@
 | 2h | Design system (CSS variables, paleta, fonty) | ✅ Gotowe |
 | — | Podmienić zdjęcie portretowe | ⏳ Czekamy na mamę (21.07) |
 | — | Dodać logo | ⏳ Czekamy na mamę |
-| — | Merge do main | ⏳ Do zrobienia |
-| — | Export statyczny (ZIP) do wysłania | ⏳ Do zrobienia |
+| — | Merge do main | ✅ Zrobione (21.07.2026) |
+| — | Export statyczny (ZIP) do wysłania | ✅ Zrobione (21.07.2026) |
+| — | Deploy na Cloudflare Pages | ✅ Zrobione (21.07.2026) |
 
 ### Następne kroki
 
 1. Podmiana zdjęcia portretowego (jak mama dostarczy)
-2. Ewentualne poprawki designu
-3. Merge `test-claude-design` → `main`
-4. `astro build` + ZIP do wysłania
-5. Deploy na Cloudflare Pages
+2. Dodać logo (jak mama dostarczy)
+3. Poprawki designu (jeśli potrzebne)
+4. Wykończenie SEO (robots.txt, sitemap.xml)
+5. Wykupienie domeny (opcjonalnie)
 
 ---
 
@@ -90,10 +91,12 @@
 3. Napisz: **"Kontynuujemy fazę 2 — jesteśmy na branchu test-claude-design"**
 
 ### Aktualna sytuacja
-- Branch `test-claude-design` — design single-page gotowy (5 sekcji)
-- Dev server działa na http://localhost:4321
+- Branch `main` — design single-page gotowy (5 sekcji)
+- Strona online: https://poradnia-dietetyczna.pages.dev
+- Auto-deploy z GitHuba na Cloudflare Pages
 - Czekamy na zdjęcie portretowe mamy (~21.07)
-- Następne kroki: podmiana zdjęcia, merge, export ZIP, deploy
+- Czekamy na logo
+- Następne kroki: podmiana zdjęcia, logo, wykończenie SEO
 
 ### Stack technologiczny
 
