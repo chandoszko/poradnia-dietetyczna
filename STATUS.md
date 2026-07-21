@@ -1,6 +1,6 @@
 # STATUS — Poradnia Dietetyczna
 
-**Data ostatniej aktualizacji:** 2026-07-21 (wieczór)
+**Data ostatniej aktualizacji:** 2026-07-21 (noc)
 
 ---
 
@@ -27,7 +27,7 @@
 | **1** | Wywiad z Mamą (ankieta, kolory, dane) | ✅ Zakończona (20.07.2026) |
 | **2** | Strona informacyjna MVP — design Claude na branchu `test-claude-design` | ✅ Zakończona (21.07.2026) |
 | **3** | Deploy na Cloudflare Pages | ✅ Zakończona (21.07.2026) — https://poradnia-dietetyczna.pages.dev |
-| **4** | Wykończenie (favicon, SEO, Lighthouse) | ⏳ Do zrobienia |
+| **4** | Wykończenie (favicon, SEO, Lighthouse) | 🔧 W trakcie — robots.txt, sitemap, Open Graph, Google Search Console dodane, czekamy na weryfikację sitemap |
 | **5** | Wykupienie domeny | ⏳ Do zrobienia |
 
 ---
@@ -78,8 +78,7 @@
 1. Podmiana zdjęcia portretowego (jak mama dostarczy)
 2. Dodać logo (jak mama dostarczy)
 3. Poprawki designu (jeśli potrzebne)
-4. Wykończenie SEO (robots.txt, sitemap.xml)
-5. Wykupienie domeny (opcjonalnie)
+4. Wykupienie domeny (opcjonalnie)
 
 ---
 
@@ -94,9 +93,11 @@
 - Branch `main` — design single-page gotowy (5 sekcji)
 - Strona online: https://poradnia-dietetyczna.pages.dev
 - Auto-deploy z GitHuba na Cloudflare Pages
+- SEO: robots.txt ✅, sitemap.xml ✅, Open Graph ✅, Google Search Console ✅ (weryfikacja w toku)
+- Lighthouse: Performance 99, Accessibility 93, Best Practices 100, SEO 100
 - Czekamy na zdjęcie portretowe mamy (~21.07)
 - Czekamy na logo
-- Następne kroki: podmiana zdjęcia, logo, wykończenie SEO
+- Następne kroki: podmiana zdjęcia, logo, wykupienie domeny
 
 ### Stack technologiczny
 
