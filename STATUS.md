@@ -1,6 +1,6 @@
 # STATUS — Poradnia Dietetyczna
 
-**Data ostatniej aktualizacji:** 2026-07-20
+**Data ostatniej aktualizacji:** 2026-07-20 (wieczór)
 
 ---
 
@@ -25,7 +25,7 @@
 |------|------|--------|
 | **0** | Środowisko (Node, Git, GitHub, VS Code) | ✅ Zakończona |
 | **1** | Wywiad z Mamą (ankieta, kolory, dane) | ✅ Zakończona (20.07.2026) |
-| **2** | Strona informacyjna MVP — treść z ankiety | 📋 Plan gotowy, do wdrożenia |
+| **2** | Strona informacyjna MVP — design Claude na branchu `test-claude-design` | 🔧 W trakcie — design gotowy, do wdrożenia na main |
 | **3** | Deploy na Cloudflare Pages | ⏳ Do zrobienia |
 | **4** | Wykończenie (favicon, SEO, Lighthouse) | ⏳ Do zrobienia |
 | **5** | Wykupienie domeny | ⏳ Do zrobienia |
@@ -55,17 +55,30 @@
 
 ## Plan pracy — Faza 2 (MVP)
 
+### Design single-page (branch `test-claude-design`) — ✅ Zrobione 20.07
+
 | # | Zadanie | Status |
 |---|---------|--------|
-| 2a | Strona główna — hero, "Dlaczego warto", "Dla kogo", CTA | ⏳ Do zrobienia |
-| 2b | Podstrona "O mnie" — imię, tytuł, opis, wykształcenie | ⏳ Do zrobienia |
-| 2c | Podstrona "Usługi" — 9 usług w kartach | ⏳ Do zrobienia |
-| 2d | Podstrona "Cennik" — bez cen, info "ustalamy indywidualnie" | ⏳ Do zrobienia |
-| 2e | Podstrona "Kontakt" — tel, email, adres, formularz | ⏳ Do zrobienia |
-| 2f | Layout — footer z prawdziwymi danymi | ⏳ Do zrobienia |
-| 2g | SEO — title, meta, Open Graph | ⏳ Do zrobienia |
+| 2a | Strona główna — hero z danymi mamy | ✅ Gotowe |
+| 2b | Sekcja "O mnie" — imię, tytuł, opis, wykształcenie | ✅ Gotowe |
+| 2c | Sekcja "Usługi" — 9 usług w kartach | ✅ Gotowe |
+| 2d | Sekcja "Jak pracuję" — 4 kroki | ✅ Gotowe |
+| 2e | Sekcja "Kontakt" — tel, email, adres, mapa | ✅ Gotowe |
+| 2f | Navbar sticky + mobile hamburger | ✅ Gotowe |
+| 2g | Footer — 4 kolumny | ✅ Gotowe |
+| 2h | Design system (CSS variables, paleta, fonty) | ✅ Gotowe |
 | — | Podmienić zdjęcie portretowe | ⏳ Czekamy na mamę (21.07) |
 | — | Dodać logo | ⏳ Czekamy na mamę |
+| — | Merge do main | ⏳ Do zrobienia |
+| — | Export statyczny (ZIP) do wysłania | ⏳ Do zrobienia |
+
+### Następne kroki
+
+1. Podmiana zdjęcia portretowego (jak mama dostarczy)
+2. Ewentualne poprawki designu
+3. Merge `test-claude-design` → `main`
+4. `astro build` + ZIP do wysłania
+5. Deploy na Cloudflare Pages
 
 ---
 
@@ -74,7 +87,13 @@
 ### Krok 1: Wróć do projektu
 1. Otwórz terminal w folderze: `D:\ai\01 projekty\poradnia-dietetyczna`
 2. Uruchom opencode
-3. Napisz: **"Kontynuujemy fazę 2 — zacznij od strony głównej"**
+3. Napisz: **"Kontynuujemy fazę 2 — jesteśmy na branchu test-claude-design"**
+
+### Aktualna sytuacja
+- Branch `test-claude-design` — design single-page gotowy (5 sekcji)
+- Dev server działa na http://localhost:4321
+- Czekamy na zdjęcie portretowe mamy (~21.07)
+- Następne kroki: podmiana zdjęcia, merge, export ZIP, deploy
 
 ### Stack technologiczny
 

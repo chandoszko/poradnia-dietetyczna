@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elżbieta Chandoszko - Dietetyk | Doradztwo Żywieniowe</title>
+    <meta name="description" content="Elżbieta Chandoszko - dietetyczka. Indywidualne doradztwo żywieniowe, dietetyka kliniczna i dziecięca. Umów wizytę w gabinecie.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nawigacja -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon">&#9752;</span>
+                <span class="logo-text">Elżbieta Chandoszko</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#uslugi">Czym się zajmuję</a></li>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#jak-pracuje">Jak pracuję</a></li>
+                <li><a href="#opinie">Opinie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#rezerwacja" class="btn btn-nav">Umów wizytę</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">Dietetyczka</p>
+                <h1>Cześć, jestem <br><span class="highlight">Elżbieta Chandoszko</span></h1>
+                <p class="hero-description">Pomogę Ci odzyskać kontrolę nad zdrowiem i samopoczuciem. Razem ułożymy sposób odżywiania, który będzie pasował do Twojego życia - bez restrykcyjnych diet i wyrzeczeń.</p>
+                <div class="hero-buttons">
+                    <a href="#rezerwacja" class="btn btn-primary">Umów się na wizytę</a>
+                    <a href="#uslugi" class="btn btn-outline">Dowiedz się więcej</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1500+</span>
+                        <span class="stat-label">Pacjentów</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">Lat praktyki</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Specjalizacje</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <div class="hero-icon">&#127822;</div>
+                    <p>Zdrowe odżywianie<br>to inwestycja w siebie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usługi -->
+    <section class="section uslugi" id="uslugi">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Czym się zajmuję</p>
+                <h2 class="section-title">W czym mogę Ci pomóc?</h2>
+                <p class="section-description">Specjalizuję się w trzech obszarach dietetyki. Każdego pacjenta traktuję indywidualnie - bo nie ma dwóch takich samych organizmów.</p>
+            </div>
+            <div class="services-grid services-grid--3">
+                <div class="service-card">
+                    <div class="service-icon">&#127823;</div>
+                    <h3>Dietetyka ogólna</h3>
+                    <p>Zdrowe odżywianie na co dzień, redukcja lub przyrost masy ciała, poprawa samopoczucia. Pomogę Ci wprowadzić trwałe zmiany w jadłospisie.</p>
+                    <ul class="service-list">
+                        <li>Konsultacja dietetyczna</li>
+                        <li>Indywidualny plan żywieniowy</li>
+                        <li>Analiza składu ciała</li>
+                        <li>Wizyty kontrolne</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Najczęściej wybierana</div>
+                    <div class="service-icon">&#9878;</div>
+                    <h3>Dietetyka kliniczna</h3>
+                    <p>Leczenie żywieniowe chorób przewlekłych. Współpracuję z lekarzami, żeby Twoja dieta wspierała terapię.</p>
+                    <ul class="service-list">
+                        <li>Cukrzyca i insulinooporność</li>
+                        <li>Choroby tarczycy (Hashimoto)</li>
+                        <li>Choroby jelit (IBS, SIBO)</li>
+                        <li>Nadciśnienie, choroby serca</li>
+                        <li>Alergie i nietolerancje pokarmowe</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">&#128102;</div>
+                    <h3>Dietetyka dziecięca</h3>
+                    <p>Prawidłowe żywienie dzieci i młodzieży. Pomagam rodzicom budować zdrowe nawyki żywieniowe całej rodziny.</p>
+                    <ul class="service-list">
+                        <li>Rozszerzanie diety niemowląt</li>
+                        <li>Problemy z apetytem u dzieci</li>
+                        <li>Nadwaga i niedowaga dziecięca</li>
+                        <li>Alergie pokarmowe u dzieci</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cennik -->
+            <div class="pricing-section">
+                <h3 class="pricing-title">Cennik wizyt</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <span class="pricing-name">Pierwsza wizyta</span>
+                        <span class="pricing-duration">60 minut</span>
+                        <span class="pricing-price">180 zł</span>
+                        <span class="pricing-desc">Szczegółowy wywiad, analiza, plan działania</span>
+                    </div>
+                    <div class="pricing-card">
+                        <span class="pricing-name">Wizyta kontrolna</span>
+                        <span class="pricing-duration">30 minut</span>
+                        <span class="pricing-price">120 zł</span>
+                        <span class="pricing-desc">Omówienie postępów, korekta planu</span>
+                    </div>
+                    <div class="pricing-card">
+                        <span class="pricing-name">Plan żywieniowy</span>
+                        <span class="pricing-duration">7 dni + przepisy</span>
+                        <span class="pricing-price">200 zł</span>
+                        <span class="pricing-desc">Jadłospis z przepisami i listą zakupów</span>
+                    </div>
+                    <div class="pricing-card">
+                        <span class="pricing-name">Pakiet startowy</span>
+                        <span class="pricing-duration">wizyta + plan</span>
+                        <span class="pricing-price">320 zł</span>
+                        <span class="pricing-desc">Pierwsza wizyta + plan żywieniowy na 7 dni</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O mnie -->
+    <section class="section o-mnie" id="o-mnie">
+        <div class="container about-grid">
+            <div class="about-image">
+                <div class="about-image-placeholder">
+                    <div class="about-icon">EC</div>
+                    <p>Elżbieta Chandoszko<br>Dietetyczka</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <p class="section-subtitle">Poznaj mnie</p>
+                <h2 class="section-title">Kilka słów o mnie</h2>
+                <p>Jestem dyplomowaną dietetyczką z ponad 10-letnim doświadczeniem. Moją misją jest pokazanie, że zdrowe odżywianie może być proste, smaczne i dopasowane do codziennego życia.</p>
+                <p>Specjalizuję się w dietetyce klinicznej, ogólnej i dziecięcej. Wierzę, że dobra dieta to nie kara, a narzędzie, które pomaga czuć się lepiej każdego dnia.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <span class="feature-icon">&#10003;</span>
+                        <div>
+                            <h4>Wykształcenie i certyfikaty</h4>
+                            <p>Dyplom dietetyki, regularne szkolenia i konferencje naukowe z zakresu żywienia klinicznego.</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">&#10003;</span>
+                        <div>
+                            <h4>Podejście bez restrykcji</h4>
+                            <p>Nie wierzę w głodówki i drastyczne diety. Stawiam na trwałe nawyki, które da się utrzymać na co dzień.</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">&#10003;</span>
+                        <div>
+                            <h4>Indywidualny kontakt</h4>
+                            <p>Prowadzę niewielki gabinet - dzięki temu mam czas, żeby naprawdę poznać każdego pacjenta.</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">&#10003;</span>
+                        <div>
+                            <h4>Wsparcie między wizytami</h4>
+                            <p>Moi pacjenci mogą do mnie napisać, gdy mają pytania lub potrzebują motywacji.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jak pracuję -->
+    <section class="section jak-pracuje" id="jak-pracuje">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Jak to wygląda</p>
+                <h2 class="section-title">Jak wygląda współpraca?</h2>
+                <p class="section-description">Wizyty odbywają się w moim gabinecie. Oto czego możesz się spodziewać.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Umawiasz wizytę</h3>
+                    <p>Wybierz wygodny termin przez formularz na stronie lub zadzwoń. Pierwsza wizyta trwa około 60 minut.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Spotykamy się w gabinecie</h3>
+                    <p>Przeprowadzam szczegółowy wywiad żywieniowy i zdrowotny. Wykonuję analizę składu ciała. Rozmawiamy o Twoich celach i stylu życia.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Przygotowuję plan</h3>
+                    <p>Na podstawie naszej rozmowy tworzę indywidualny plan żywieniowy z konkretnymi przepisami i listą zakupów.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Wspólnie realizujemy cele</h3>
+                    <p>Na wizytach kontrolnych monitorujemy postępy, modyfikujemy plan i rozwiązujemy ewentualne trudności.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opinie -->
+    <section class="section opinie" id="opinie">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Opinie pacjentów</p>
+                <h2 class="section-title">Co mówią moi pacjenci</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Pani Elżbieta podeszła do mojego problemu z ogromnym zaangażowaniem. Schudłam 12 kg w 5 miesięcy, a jadłospis był tak smaczny, że moja rodzina też zaczęła tak jeść!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div>
+                            <strong>Marta K.</strong>
+                            <span>Pacjentka od 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Trafiłem do pani Eli z insulinoopornością. Po 3 miesiącach diety moje wyniki krwi wróciły do normy. Lekarz był w szoku. Dziękuję za cierpliwość i profesjonalizm!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TZ</div>
+                        <div>
+                            <strong>Tomasz Z.</strong>
+                            <span>Pacjent od 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Mój syn (5 lat) jadł tylko makaron i chleb. Pani Elżbieta pomogła nam krok po kroku wprowadzić nowe produkty. Dziś je warzywa i próbuje nowych smaków!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AN</div>
+                        <div>
+                            <strong>Agnieszka N.</strong>
+                            <span>Pacjentka od 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rezerwacja -->
+    <section class="section rezerwacja" id="rezerwacja">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Zarezerwuj termin</p>
+                <h2 class="section-title">Umów wizytę w gabinecie</h2>
+                <p class="section-description">Wybierz rodzaj wizyty i wygodny termin. Potwierdzenie otrzymasz na e-mail.</p>
+            </div>
+            <div class="booking-container">
+                <div class="booking-steps">
+                    <div class="step active" data-step="1">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Wizyta</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="2">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Termin</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="3">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Twoje dane</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="4">
+                        <span class="step-number">4</span>
+                        <span class="step-label">Potwierdzenie</span>
+                    </div>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <!-- Krok 1 -->
+                    <div class="form-step active" id="formStep1">
+                        <h3>Wybierz rodzaj wizyty</h3>
+                        <div class="form-group">
+                            <label for="service">Czego dotyczy wizyta? *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Wybierz --</option>
+                                <option value="ogolna">Dietetyka ogólna (odchudzanie, zdrowe odżywianie)</option>
+                                <option value="kliniczna">Dietetyka kliniczna (choroby, nietolerancje)</option>
+                                <option value="dziecieca">Dietetyka dziecięca (żywienie dzieci)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="visitType">Typ wizyty *</label>
+                            <select id="visitType" name="visitType" required>
+                                <option value="">-- Wybierz typ wizyty --</option>
+                                <option value="pierwsza">Pierwsza wizyta (60 min) - 180 zł</option>
+                                <option value="kontrolna">Wizyta kontrolna (30 min) - 120 zł</option>
+                                <option value="pakiet">Pakiet startowy (wizyta + plan 7 dni) - 320 zł</option>
+                            </select>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-primary" onclick="nextStep(1)">Dalej</button>
+                        </div>
+                    </div>
+
+                    <!-- Krok 2 -->
+                    <div class="form-step" id="formStep2">
+                        <h3>Wybierz termin wizyty</h3>
+                        <div class="form-group">
+                            <label for="date">Data wizyty *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Dostępne godziny *</label>
+                            <div class="time-slots" id="timeSlots">
+                                <p class="time-slots-info">Wybierz datę, aby zobaczyć dostępne godziny.</p>
+                            </div>
+                            <input type="hidden" id="time" name="time" required>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline" onclick="prevStep(2)">Wstecz</button>
+                            <button type="button" class="btn btn-primary" onclick="nextStep(2)">Dalej</button>
+                        </div>
+                    </div>
+
+                    <!-- Krok 3 -->
+                    <div class="form-step" id="formStep3">
+                        <h3>Twoje dane kontaktowe</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Imię *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="np. Anna" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nazwisko *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="np. Kowalska" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="np. anna@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="np. 600 100 200" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">O czym chciałabyś/chciałbyś porozmawiać?</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Opisz krótko cel wizyty, alergie pokarmowe, choroby, leki... Im więcej powiesz, tym lepiej się przygotuję."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <span>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu umówienia i realizacji wizyty. *</span>
+                            </label>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline" onclick="prevStep(3)">Wstecz</button>
+                            <button type="button" class="btn btn-primary" onclick="nextStep(3)">Podsumowanie</button>
+                        </div>
+                    </div>
+
+                    <!-- Krok 4: Podsumowanie -->
+                    <div class="form-step" id="formStep4">
+                        <h3>Sprawdź dane rezerwacji</h3>
+                        <div class="booking-summary" id="bookingSummary">
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline" onclick="prevStep(4)">Wstecz</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Potwierdź rezerwację</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Potwierdzenie -->
+                <div class="booking-success" id="bookingSuccess" style="display: none;">
+                    <div class="success-icon">&#10003;</div>
+                    <h3>Wizyta zarezerwowana!</h3>
+                    <p>Potwierdzenie wysłałam na Twój adres e-mail. Do zobaczenia w gabinecie!</p>
+                    <p class="success-details" id="successDetails"></p>
+                    <button type="button" class="btn btn-primary" onclick="resetBooking()">Zarezerwuj kolejną wizytę</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section kontakt" id="kontakt">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <p class="section-subtitle">Zapraszam do kontaktu</p>
+                <h2 class="section-title">Gdzie mnie znajdziesz</h2>
+                <p>Masz pytania przed wizytą? Zadzwoń lub napisz - chętnie odpowiem.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">&#128205;</span>
+                        <div>
+                            <strong>Gabinet</strong>
+                            <p>ul. Zdrowa 15, lok. 3<br>00-001 Warszawa</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">&#128222;</span>
+                        <div>
+                            <strong>Telefon</strong>
+                            <p><a href="tel:+48600100200">+48 600 100 200</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">&#9993;</span>
+                        <div>
+                            <strong>E-mail</strong>
+                            <p><a href="mailto:kontakt@elzbietachandoszko.pl">kontakt@elzbietachandoszko.pl</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">&#128336;</span>
+                        <div>
+                            <strong>Godziny przyjęć</strong>
+                            <p>Pon-Pt: 9:00 - 18:00<br>Sob: 9:00 - 13:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map">
+                <div class="map-placeholder">
+                    <div class="map-icon">&#128506;</div>
+                    <p>ul. Zdrowa 15, lok. 3<br>00-001 Warszawa</p>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Otwórz w Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid footer-grid--personal">
+                <div class="footer-about">
+                    <a href="#hero" class="logo">
+                        <span class="logo-icon">&#9752;</span>
+                        <span class="logo-text">Elżbieta Chandoszko</span>
+                    </a>
+                    <p>Dietetyczka. Pomagam jeść mądrze i czuć się dobrze - bez wyrzeczeń i głodówek.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Strona</h4>
+                    <ul>
+                        <li><a href="#uslugi">Czym się zajmuję</a></li>
+                        <li><a href="#o-mnie">O mnie</a></li>
+                        <li><a href="#jak-pracuje">Jak pracuję</a></li>
+                        <li><a href="#opinie">Opinie</a></li>
+                        <li><a href="#rezerwacja">Rezerwacja</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Specjalizacje</h4>
+                    <ul>
+                        <li><a href="#uslugi">Dietetyka ogólna</a></li>
+                        <li><a href="#uslugi">Dietetyka kliniczna</a></li>
+                        <li><a href="#uslugi">Dietetyka dziecięca</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informacje</h4>
+                    <ul>
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">RODO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elżbieta Chandoszko - Dietetyk. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

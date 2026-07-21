@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cennik | Poradnia Dietetyczna Elżbieta Chandoszko</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#8492ae",
+                    "surface-tint": "#515f78",
+                    "on-background": "#1a1c1c",
+                    "on-primary-fixed": "#0d1c32",
+                    "tertiary": "#141900",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#1d2b42",
+                    "surface": "#f9f9f9",
+                    "outline-variant": "#c5c6ce",
+                    "tertiary-fixed": "#d9ee57",
+                    "text-body": "#3A475C",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#c0ecd9",
+                    "on-tertiary-fixed": "#191e00",
+                    "inverse-on-surface": "#f0f1f1",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "secondary": "#3e6658",
+                    "surface-container-low": "#f3f3f4",
+                    "secondary-container": "#c0ecd9",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#899b00",
+                    "inverse-surface": "#2f3131",
+                    "on-secondary-container": "#446c5d",
+                    "inverse-primary": "#b9c7e4",
+                    "outline": "#75777e",
+                    "surface-dim": "#dadada",
+                    "on-secondary-fixed": "#002117",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#282e00",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary-fixed-variant": "#394760",
+                    "on-secondary-fixed-variant": "#264e40",
+                    "border-soft": "#E1E8ED",
+                    "primary": "#07162c",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-surface-variant": "#44474d",
+                    "surface-container-high": "#e8e8e8",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "mint-surface": "#B2D4C7",
+                    "tertiary-fixed-dim": "#bdd13d",
+                    "on-tertiary-fixed-variant": "#424b00",
+                    "secondary-fixed-dim": "#a5d0be",
+                    "surface-bright": "#f9f9f9",
+                    "sea-green": "#88B2A1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "64px",
+                    "lg": "40px",
+                    "sm": "16px",
+                    "md": "24px",
+                    "base": "4px",
+                    "section-gap": "100px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display": ["DM Sans"],
+                    "headline-md": ["DM Sans"],
+                    "headline-lg": ["DM Sans"],
+                    "headline-lg-mobile": ["DM Sans"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .diagonal-bg {
+            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+        }
+        .diagonal-bg-reverse {
+            clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-mint-surface selection:text-primary">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 z-50 shadow-[0px_10px_30px_rgba(29,43,66,0.06)]">
+<nav class="flex justify-between items-center w-full px-md md:px-lg py-sm max-w-7xl mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary" href="#">Poradnia Dietetyczna</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex gap-lg items-center">
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">About</a>
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">Services</a>
+<a class="font-label-md text-label-md text-secondary font-bold border-b-2 border-secondary transition-colors duration-200" href="#">Pricing</a>
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">Contact</a>
+<button class="bg-tertiary-fixed text-primary px-lg py-xs rounded-full font-label-md text-label-md hover:scale-95 transition-transform">Book Appointment</button>
+</div>
+<!-- Mobile Toggle -->
+<button class="md:hidden p-xs" onclick="toggleMenu()">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+</nav>
+</header>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-mint-surface z-[60] flex flex-col items-center justify-center gap-lg hidden transition-all duration-300" id="mobile-menu">
+<button class="absolute top-sm right-md p-xs" onclick="toggleMenu()">
+<span class="material-symbols-outlined text-primary text-3xl">close</span>
+</button>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">Home</a>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">About</a>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">Services</a>
+<a class="font-headline-lg text-headline-lg text-secondary font-bold" href="#">Pricing</a>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">Contact</a>
+</div>
+<main class="relative">
+<!-- Hero Pricing Message -->
+<section class="py-xl md:py-section-gap px-md relative">
+<div class="max-w-4xl mx-auto text-center mb-lg">
+<h1 class="font-display text-display text-primary mb-sm md:text-display">Cennik usług</h1>
+<p class="font-body-lg text-body-lg text-text-body max-w-2xl mx-auto">Wspólnie wypracujemy drogę do Twojego zdrowia, dopasowaną do Twoich możliwości i celów.</p>
+</div>
+<div class="max-w-3xl mx-auto bg-surface-container-lowest rounded-2xl p-md md:p-xl shadow-[0px_10px_30px_rgba(29,43,66,0.06)] border border-border-soft relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-mint-surface opacity-20 rounded-full -mr-16 -mt-16"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-xs mb-md">
+<span class="material-symbols-outlined text-sea-green" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h2 class="font-headline-md text-headline-md text-primary">Cennik ustalany indywidualnie</h2>
+</div>
+<div class="space-y-md font-body-md text-body-md text-text-body leading-relaxed">
+<p>Wierzę, że każdy pacjent to inna historia, inne potrzeby metaboliczne i inny styl życia. Sztywne ramy cenowe często nie oddają rzeczywistego nakładu pracy potrzebnego do osiągnięcia Twojego celu.</p>
+<p>Dlatego w mojej poradni **cena konsultacji i planów żywieniowych jest ustalana indywidualnie** podczas pierwszej rozmowy. Pozwala to na:</p>
+<ul class="space-y-sm">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-sea-green mt-1">check_circle</span>
+<span>Dostosowanie zakresu wsparcia do Twojego budżetu.</span>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-sea-green mt-1">check_circle</span>
+<span>Uwzględnienie stopnia złożoności Twojego przypadku klinicznego.</span>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-sea-green mt-1">check_circle</span>
+<span>Elastyczność w doborze częstotliwości spotkań kontrolnych.</span>
+</li>
+</ul>
+<p class="pt-sm border-t border-border-soft font-medium text-primary">Twoje zdrowie nie ma jednej ceny, ma za to ogromną wartość. Porozmawiajmy o tym, czego potrzebujesz.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA Section (Diagonal) -->
+<section class="bg-mint-surface py-xl md:py-section-gap diagonal-bg-reverse">
+<div class="max-w-7xl mx-auto px-md md:px-lg text-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-md">Umów się na wstępną rozmowę</h3>
+<div class="flex flex-col md:flex-row items-center justify-center gap-lg md:gap-xl">
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-widest mb-xs">Zadzwoń do nas</span>
+<a class="font-display text-display text-primary hover:text-secondary transition-colors duration-300" href="tel:+48123456789">+48 123 456 789</a>
+</div>
+<div class="hidden md:block h-16 w-px bg-primary opacity-10"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-widest mb-md">Preferujesz wiadomość?</span>
+<button class="bg-primary text-on-primary px-xl py-md rounded-full font-label-md text-label-md hover:scale-105 active:scale-95 transition-all shadow-lg">
+                            Napisz do nas
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-xl md:py-section-gap px-md">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Często zadawane pytania</h2>
+<div class="w-24 h-1 bg-sea-green mx-auto rounded-full"></div>
+</div>
+<div class="space-y-md">
+<!-- FAQ Item 1 -->
+<div class="group border border-border-soft rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-md">
+<button class="w-full flex justify-between items-center p-md text-left" onclick="toggleFaq(this)">
+<span class="font-headline-md text-headline-md text-primary">Jak przygotować się do pierwszej wizyty?</span>
+<span class="material-symbols-outlined text-sea-green transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96">
+<div class="p-md pt-0 font-body-md text-body-md text-text-body">
+                                Proszę o zabranie aktualnych wyników badań krwi (nie starszych niż 3-6 miesięcy) oraz spisanie 3-dniowego dzienniczka żywieniowego. To pozwoli nam na efektywniejszy start i szybsze opracowanie planu.
+                            </div>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="group border border-border-soft rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-md">
+<button class="w-full flex justify-between items-center p-md text-left" onclick="toggleFaq(this)">
+<span class="font-headline-md text-headline-md text-primary">Czy możliwe są konsultacje online?</span>
+<span class="material-symbols-outlined text-sea-green transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96">
+<div class="p-md pt-0 font-body-md text-body-md text-text-body">
+                                Tak, prowadzę konsultacje za pośrednictwem platform wideo (Skype, Google Meet). Standard opieki pozostaje ten sam, a materiały przesyłane są drogą elektroniczną.
+                            </div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="group border border-border-soft rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-md">
+<button class="w-full flex justify-between items-center p-md text-left" onclick="toggleFaq(this)">
+<span class="font-headline-md text-headline-md text-primary">Ile trwa pierwsza konsultacja?</span>
+<span class="material-symbols-outlined text-sea-green transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96">
+<div class="p-md pt-0 font-body-md text-body-md text-text-body">
+                                Pierwsza wizyta trwa zazwyczaj od 60 do 90 minut. Jest to czas na szczegółowy wywiad zdrowotny, analizę nawyków oraz ustalenie realnych celów współpracy.
+                            </div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="group border border-border-soft rounded-2xl bg-white overflow-hidden transition-all duration-300 hover:shadow-md">
+<button class="w-full flex justify-between items-center p-md text-left" onclick="toggleFaq(this)">
+<span class="font-headline-md text-headline-md text-primary">Czy dieta uwzględnia moje preferencje smakowe?</span>
+<span class="material-symbols-outlined text-sea-green transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-96">
+<div class="p-md pt-0 font-body-md text-body-md text-text-body">
+                                Absolutnie. Dieta, której nie lubisz, nie będzie skuteczna na dłuższą metę. Wspólnie eliminujemy nielubiane produkty i szukamy zdrowych zamienników Twoich ulubionych dań.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg w-full px-md md:px-lg py-xl max-w-7xl mx-auto">
+<div class="space-y-md">
+<span class="font-headline-md text-headline-md font-bold text-on-primary">Poradnia Dietetyczna</span>
+<p class="font-body-md text-body-md text-on-primary-container">Profesjonalne wsparcie dietetyczne oparte na wiedzy medycznej i empatii.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-primary uppercase tracking-widest opacity-60">Nawigacja</h4>
+<a class="font-label-sm text-label-sm text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Home</a>
+<a class="font-label-sm text-label-sm text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">About</a>
+<a class="font-label-sm text-label-sm text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Services</a>
+<a class="font-label-sm text-label-sm text-tertiary-fixed font-bold" href="#">Pricing</a>
+<a class="font-label-sm text-label-sm text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Polityka Prywatności</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-primary uppercase tracking-widest opacity-60">Kontakt</h4>
+<p class="font-label-sm text-label-sm text-on-primary-container">ul. Przykładowa 12/4<br/>00-001 Warszawa</p>
+<p class="font-label-sm text-label-sm text-on-primary-container">kontakt@poradniadietetyczna.pl</p>
+</div>
+</div>
+<div class="border-t border-white/10 py-md px-md md:px-lg max-w-7xl mx-auto text-center">
+<p class="font-label-sm text-label-sm text-on-primary-container opacity-60">© 2024 Poradnia Dietetyczna Elżbieta Chandoszko. Wszelkie prawa zastrzeżone.</p>
+</div>
+</footer>
+<script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function toggleFaq(button) {
+            const container = button.closest('.group');
+            const isActive = container.classList.contains('active');
+            
+            // Close all first for accordion behavior
+            document.querySelectorAll('.group').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            if (!isActive) {
+                container.classList.add('active');
+            }
+        }
+
+        // Simple scroll reveal
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('py-xs');
+                header.classList.remove('py-sm');
+            } else {
+                header.classList.add('py-sm');
+                header.classList.remove('py-xs');
+            }
+        });
+    </script>
+</body></html>

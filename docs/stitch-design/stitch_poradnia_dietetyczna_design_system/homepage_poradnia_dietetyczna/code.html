@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Poradnia Dietetyczna - Elżbieta Chandoszko</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#8492ae",
+                    "surface-tint": "#515f78",
+                    "on-background": "#1a1c1c",
+                    "on-primary-fixed": "#0d1c32",
+                    "tertiary": "#141900",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#1d2b42",
+                    "surface": "#f9f9f9",
+                    "outline-variant": "#c5c6ce",
+                    "tertiary-fixed": "#d9ee57",
+                    "text-body": "#3A475C",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#c0ecd9",
+                    "on-tertiary-fixed": "#191e00",
+                    "inverse-on-surface": "#f0f1f1",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "secondary": "#3e6658",
+                    "surface-container-low": "#f3f3f4",
+                    "secondary-container": "#c0ecd9",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#899b00",
+                    "inverse-surface": "#2f3131",
+                    "on-secondary-container": "#446c5d",
+                    "inverse-primary": "#b9c7e4",
+                    "outline": "#75777e",
+                    "surface-dim": "#dadada",
+                    "on-secondary-fixed": "#002117",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#282e00",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary-fixed-variant": "#394760",
+                    "on-secondary-fixed-variant": "#264e40",
+                    "border-soft": "#E1E8ED",
+                    "primary": "#07162c",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-surface-variant": "#44474d",
+                    "surface-container-high": "#e8e8e8",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "mint-surface": "#B2D4C7",
+                    "tertiary-fixed-dim": "#bdd13d",
+                    "on-tertiary-fixed-variant": "#424b00",
+                    "secondary-fixed-dim": "#a5d0be",
+                    "surface-bright": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "64px",
+                    "lg": "40px",
+                    "sm": "16px",
+                    "md": "24px",
+                    "base": "4px",
+                    "section-gap": "100px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display": ["DM Sans"],
+                    "headline-md": ["DM Sans"],
+                    "headline-lg": ["DM Sans"],
+                    "headline-lg-mobile": ["DM Sans"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .diagonal-separator-right {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+        .diagonal-separator-left {
+            clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+        }
+        .soft-health-shadow {
+            box-shadow: 0px 10px 30px rgba(29, 43, 66, 0.06);
+        }
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 20px 40px rgba(29, 43, 66, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface-container-high docked full-width top-0 sticky z-50 shadow-[0px_10px_30px_rgba(29,43,66,0.06)] dark:shadow-none" id="top-nav">
+<div class="flex justify-between items-center w-full px-md md:px-lg py-sm max-w-7xl mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                Poradnia Dietetyczna
+            </div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary font-label-md text-label-md py-1" href="#">Home</a>
+<a class="text-primary dark:text-on-primary-container hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md py-1" href="#">About</a>
+<a class="text-primary dark:text-on-primary-container hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md py-1" href="#">Services</a>
+<a class="text-primary dark:text-on-primary-container hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md py-1" href="#">Pricing</a>
+<a class="text-primary dark:text-on-primary-container hover:text-secondary-container transition-colors duration-200 font-label-md text-label-md py-1" href="#">Contact</a>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-lg py-sm rounded-full font-label-md text-label-md font-bold hover:scale-105 active:scale-95 transition-all">
+                    Book Appointment
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Navigation Overlay -->
+<div class="fixed inset-0 bg-mint-surface z-[60] translate-x-full transition-transform duration-300 md:hidden flex flex-col p-lg" id="mobile-menu">
+<div class="flex justify-between items-center mb-xl">
+<span class="font-headline-md text-headline-md font-bold text-primary">Menu</span>
+<button class="p-2" onclick="toggleMobileMenu()"><span class="material-symbols-outlined text-3xl">close</span></button>
+</div>
+<div class="flex flex-col gap-lg items-center">
+<a class="font-headline-md text-headline-md text-primary" href="#">Home</a>
+<a class="font-headline-md text-headline-md text-primary" href="#">About</a>
+<a class="font-headline-md text-headline-md text-primary" href="#">Services</a>
+<a class="font-headline-md text-headline-md text-primary" href="#">Pricing</a>
+<a class="font-headline-md text-headline-md text-primary" href="#">Contact</a>
+<button class="mt-xl bg-primary text-on-primary px-xl py-md rounded-full font-label-md text-label-md font-bold w-full">Book Appointment</button>
+</div>
+</div>
+<!-- Hero Section -->
+<header class="relative bg-primary min-h-[85vh] flex items-center diagonal-separator-right overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full object-cover opacity-40" data-alt="A professional medical setting with warm lighting, featuring a high-quality close-up of fresh, vibrant vegetables arranged artistically on a wooden table. The lighting is soft and cinematic, with a deep navy blue and emerald green color palette that evokes health and clinical expertise. In the blurred background, a smiling female dietitian in professional attire consults with a patient." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXSyLA1HaAGrFbb84L4iJhB6zYin9RiC1cZ4M8fpKr2inhp4IIm0lg6zXNioGaHwRMq7vj_HBC-cQ6C-QWMmhhdPTgUjyLUhDPkKDGo6k92rqc2mQrDm6f4w7l8woqWFhQL-yLlJ1Ta2Vn5-GdVfsNFkHH3Q_jABtE71rUiMmSpnjHjeo9dDsrzkXZBTg4s9a3xwm433499XQk8a4xjwu1TE9B1diUzSuX9_eJa1GRUdAt2a3-6dvE')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-md md:px-lg w-full">
+<div class="max-w-2xl">
+<h1 class="font-display text-display text-on-primary mb-md leading-tight">
+                    Profesjonalna pomoc dietetyczna w chorobach metabolicznych
+                </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-lg">
+                    Odzyskaj zdrowie i energię dzięki indywidualnym planom żywieniowym opartym na badaniach naukowych i empatii. Specjalizuję się w dietoterapii cukrzycy, insulinooporności i chorób serca.
+                </p>
+<div class="flex flex-wrap gap-md">
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-xl py-md rounded-full font-label-md text-label-md font-bold hover:scale-105 transition-transform shadow-lg shadow-tertiary-fixed/20">
+                        Umów wizytę
+                    </button>
+<button class="border-2 border-on-primary-container text-on-primary px-xl py-md rounded-full font-label-md text-label-md font-bold hover:bg-on-primary-container/10 transition-colors">
+                        Poznaj ofertę
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Value Props Section -->
+<section class="py-section-gap bg-surface relative">
+<div class="max-w-7xl mx-auto px-md md:px-lg">
+<div class="text-center mb-xl">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">Dlaczego ja?</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-xs">Fundamenty Twojego zdrowia</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-lg rounded-2xl soft-health-shadow hover-lift border border-outline-variant/30 group">
+<div class="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-md group-hover:bg-tertiary-fixed transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">person_apron</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Indywidualne podejście</h3>
+<p class="text-text-body font-body-md">
+                        Twoja dieta to nie gotowiec z szuflady. Tworzę plany dopasowane do Twojego stylu życia, preferencji smakowych i wyników badań.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-lg rounded-2xl soft-health-shadow hover-lift border border-outline-variant/30 group">
+<div class="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-md group-hover:bg-tertiary-fixed transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Skuteczność</h3>
+<p class="text-text-body font-body-md">
+                        Opieram się na faktach medycznych. Skutecznie pomagam w redukcji masy ciała oraz stabilizacji parametrów metabolicznych.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-lg rounded-2xl soft-health-shadow hover-lift border border-outline-variant/30 group">
+<div class="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-md group-hover:bg-tertiary-fixed transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Empatia</h3>
+<p class="text-text-body font-body-md">
+                        Rozumiem wyzwania, przed którymi stoisz. Zapewniam wsparcie emocjonalne i merytoryczne na każdym etapie Twojej drogi.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Overview -->
+<section class="py-section-gap bg-mint-surface diagonal-separator-left diagonal-separator-right relative">
+<div class="max-w-7xl mx-auto px-md md:px-lg py-xl">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div class="max-w-xl">
+<span class="text-on-secondary-fixed-variant font-label-md text-label-md uppercase tracking-widest">Nasza specjalizacja</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-xs">W czym możemy Ci pomóc?</h2>
+</div>
+<button class="text-primary font-label-md text-label-md flex items-center gap-xs hover:gap-md transition-all">
+                    Zobacz wszystkie usługi <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Service 1: Diabetes -->
+<div class="relative overflow-hidden rounded-2xl group h-[400px] soft-health-shadow">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="A clean, minimalist workspace of a professional nutritionist, showing a blood glucose meter, a fresh green apple, and a notepad on a white marble surface. The lighting is bright and clinical but warm, with soft mint green accents. High-quality corporate health photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCngoE9V-QAVc2mPeeORCYqKqLjT5wcWqmlDIgBG-8zYuqkGYGv_1Dw-rd6yLUvNomIPZ669STlT482pt1u8xUBcvD7iqD5FwBh1X9ch4mI1R_qi-apDJ-TQnjxEQPQf7fLNuXJmLwYhssQMizy5czqzEE4nm7WhyWAFsu4UnpO1zvD-jNDZ9Hvggfw8Kaz2yv1DS7x71bkVYo_wgY2CQpbEGyMzgMUortYuTyQUpLwQnvPPX8xcINZ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 p-lg text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-xs">Cukrzyca i IO</h4>
+<p class="font-body-md opacity-90">Stabilizacja glikemii poprzez mądrą dietę o niskim IG.</p>
+</div>
+</div>
+<!-- Service 2: Heart Health -->
+<div class="relative overflow-hidden rounded-2xl group h-[400px] soft-health-shadow">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="A heart-healthy meal arrangement featuring oily fish, walnuts, and leafy green vegetables on a pristine ceramic plate. The aesthetic is modern and professional, with a focus on natural colors like deep greens and warm wood tones. High resolution food photography with soft-focus background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_woWiQOLVF7ReGJuTap1uR4OjvvxGjR-NN6ZWfAVIcvrQqJenk8cpEsXQVCB2iaSdJ6IRl3EMbZ9UuAbWtJXLnzZave_wKsqweiMt8RV-qvFL2JG_DbJdMmi-dHAXS0DTo92dOi8-KE0_ja4OQjUpvED2OHx4qpDXts6j8pj5hZectYjfgkvgaRXy-QmzGsl8YWx9NiNJLrUixlym9fVqFGnjbn3u0HAd_KV742u8_Nn5z7NhJNYl')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 p-lg text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-xs">Zdrowe Serce</h4>
+<p class="font-body-md opacity-90">Dietoterapia nadciśnienia i zaburzeń lipidowych.</p>
+</div>
+</div>
+<!-- Service 3: Weight Loss -->
+<div class="relative overflow-hidden rounded-2xl group h-[400px] soft-health-shadow lg:col-span-1 md:col-span-2 lg:md:col-span-1">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="A bright and airy kitchen scene where a person is preparing a colorful salad. Focus is on the vibrant ingredients like bell peppers and avocados. The mood is optimistic and energetic, representing healthy weight loss and lifestyle change. Clean lighting and fresh lime accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-JBpPCf8yZuK_vpmcAyus1-N55_alfJ8b0itqzvL1HegYEwsegXaMf_3sV559rnmICyMC8irmiBdcgSqImLt6bRYy4ZLDXGgC6m4wOh8Nwq04uKCxZbKiAuuVD5KMbivVGa0u7XfcuMQIcupYyy4nTM4vcJE9vpa4MZcz2duId_BxY-NER_yGe7UIgQeMMLhK_s3wsEU6p6EZ922v1qqSV-R_EnSdz-JnPo80QVb3aLfj3ei0pE79')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 p-lg text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-xs">Redukcja Masy Ciała</h4>
+<p class="font-body-md opacity-90">Skuteczne i trwałe odchudzanie bez efektu jojo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-gap bg-surface relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-md md:px-lg relative z-10">
+<div class="bg-primary rounded-2xl p-xl md:p-[80px] text-center relative overflow-hidden">
+<!-- Subtle graphic pattern -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-fixed/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary-container/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-display text-display text-on-primary mb-md">Zacznij dbać o swoje zdrowie już dziś</h2>
+<p class="text-on-primary-container font-body-lg text-body-lg mb-xl">
+                        Twoja pierwsza konsultacja to pierwszy krok do lepszego samopoczucia. Umów się na spotkanie online lub w gabinecie.
+                    </p>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-xl py-md rounded-full font-label-md text-label-md font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-tertiary-fixed/30">
+                        Zarezerwuj termin
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container full-width">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg w-full px-md md:px-lg py-xl max-w-7xl mx-auto items-start">
+<!-- Brand & Contact -->
+<div>
+<div class="font-headline-md text-headline-md font-bold text-on-primary mb-md">
+                    Poradnia Dietetyczna
+                </div>
+<p class="text-on-primary-container font-body-md mb-md">
+                    Elżbieta Chandoszko<br/>
+                    Profesjonalne wsparcie dietetyczne
+                </p>
+<div class="flex flex-col gap-xs">
+<div class="flex items-center gap-sm text-on-primary">
+<span class="material-symbols-outlined text-tertiary-fixed">mail</span>
+<span>kontakt@dietetyk-chandoszko.pl</span>
+</div>
+<div class="flex items-center gap-sm text-on-primary">
+<span class="material-symbols-outlined text-tertiary-fixed">call</span>
+<span>+48 123 456 789</span>
+</div>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-col gap-sm">
+<span class="text-tertiary-fixed font-bold uppercase tracking-wider text-label-sm">Nawigacja</span>
+<nav class="flex flex-col gap-xs">
+<a class="text-on-primary-container dark:text-on-tertiary-fixed-variant hover:text-tertiary-fixed transition-colors font-body-md" href="#">Home</a>
+<a class="text-on-primary-container dark:text-on-tertiary-fixed-variant hover:text-tertiary-fixed transition-colors font-body-md" href="#">About</a>
+<a class="text-on-primary-container dark:text-on-tertiary-fixed-variant hover:text-tertiary-fixed transition-colors font-body-md" href="#">Services</a>
+<a class="text-on-primary-container dark:text-on-tertiary-fixed-variant hover:text-tertiary-fixed transition-colors font-body-md" href="#">Pricing</a>
+<a class="text-on-primary-container dark:text-on-tertiary-fixed-variant hover:text-tertiary-fixed transition-colors font-body-md" href="#">Contact</a>
+<a class="text-on-primary-container dark:text-on-tertiary-fixed-variant hover:text-tertiary-fixed transition-colors font-body-md" href="#">Polityka Prywatności</a>
+</nav>
+</div>
+<!-- Social & Credits -->
+<div class="flex flex-col gap-sm">
+<span class="text-tertiary-fixed font-bold uppercase tracking-wider text-label-sm">Bądźmy w kontakcie</span>
+<div class="flex gap-md mb-md">
+<a class="w-10 h-10 rounded-full bg-on-primary-container/20 flex items-center justify-center text-on-primary hover:bg-tertiary-fixed hover:text-on-tertiary-fixed transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-on-primary-container/20 flex items-center justify-center text-on-primary hover:bg-tertiary-fixed hover:text-on-tertiary-fixed transition-all" href="#">
+<span class="material-symbols-outlined">forum</span>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-on-primary-container/60">
+                    © 2024 Poradnia Dietetyczna Elżbieta Chandoszko. Wszelkie prawa zastrzeżone.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const isOpen = menu.classList.contains('translate-x-0');
+            if (isOpen) {
+                menu.classList.remove('translate-x-0');
+                menu.classList.add('translate-x-full');
+            } else {
+                menu.classList.remove('translate-x-full');
+                menu.classList.add('translate-x-0');
+            }
+        }
+
+        // Simple scroll reveal for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.hover-lift').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

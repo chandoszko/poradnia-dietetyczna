@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kontakt | Poradnia Dietetyczna Elżbieta Chandoszko</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#8492ae",
+                    "surface-tint": "#515f78",
+                    "on-background": "#1a1c1c",
+                    "on-primary-fixed": "#0d1c32",
+                    "tertiary": "#141900",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#1d2b42",
+                    "surface": "#f9f9f9",
+                    "outline-variant": "#c5c6ce",
+                    "tertiary-fixed": "#d9ee57",
+                    "text-body": "#3A475C",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#c0ecd9",
+                    "on-tertiary-fixed": "#191e00",
+                    "inverse-on-surface": "#f0f1f1",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "secondary": "#3e6658",
+                    "surface-container-low": "#f3f3f4",
+                    "secondary-container": "#c0ecd9",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#899b00",
+                    "inverse-surface": "#2f3131",
+                    "on-secondary-container": "#446c5d",
+                    "inverse-primary": "#b9c7e4",
+                    "outline": "#75777e",
+                    "surface-dim": "#dadada",
+                    "on-secondary-fixed": "#002117",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#282e00",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary-fixed-variant": "#394760",
+                    "on-secondary-fixed-variant": "#264e40",
+                    "border-soft": "#E1E8ED",
+                    "primary": "#07162c",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-surface-variant": "#44474d",
+                    "surface-container-high": "#e8e8e8",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "mint-surface": "#B2D4C7",
+                    "tertiary-fixed-dim": "#bdd13d",
+                    "on-tertiary-fixed-variant": "#424b00",
+                    "secondary-fixed-dim": "#a5d0be",
+                    "surface-bright": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "64px",
+                    "lg": "40px",
+                    "sm": "16px",
+                    "md": "24px",
+                    "base": "4px",
+                    "section-gap": "100px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display": ["DM Sans"],
+                    "headline-md": ["DM Sans"],
+                    "headline-lg": ["DM Sans"],
+                    "headline-lg-mobile": ["DM Sans"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .diagonal-separator-down {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .diagonal-separator-up {
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #07162c;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface sticky top-0 z-50 shadow-[0px_10px_30px_rgba(29,43,66,0.06)]">
+<div class="flex justify-between items-center w-full px-md md:px-lg py-sm max-w-7xl mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+                Poradnia Dietetyczna
+            </div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">About</a>
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">Services</a>
+<a class="font-label-md text-label-md text-primary hover:text-secondary-container transition-colors duration-200" href="#">Pricing</a>
+<a class="font-label-md text-label-md text-secondary font-bold border-b-2 border-secondary" href="#">Contact</a>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-lg py-xs rounded-full font-label-md text-label-md hover:scale-105 active:scale-95 transition-all">
+                    Book Appointment
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Menu -->
+<div class="hidden fixed inset-0 z-[60] bg-mint-surface flex flex-col items-center justify-center gap-lg" id="mobile-menu">
+<button class="absolute top-md right-md text-primary" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">Home</a>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">About</a>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">Services</a>
+<a class="font-headline-lg text-headline-lg text-primary" href="#">Pricing</a>
+<a class="font-headline-lg text-headline-lg text-secondary font-bold" href="#">Contact</a>
+</div>
+<!-- Header Section -->
+<header class="relative bg-primary pt-xl pb-section-gap diagonal-separator-down overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+
+</div>
+<div class="relative max-w-7xl mx-auto px-md md:px-lg z-10 text-center">
+<h1 class="font-display text-display text-on-primary mb-sm md:text-[64px]">
+                Skontaktuj się z nami
+            </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">
+                Masz pytania dotyczące diety lub chcesz umówić się na pierwszą konsultację? Jesteśmy tutaj, aby pomóc Ci w drodze do lepszego zdrowia.
+            </p>
+</div>
+</header>
+<!-- Main Contact Section -->
+<section class="max-w-7xl mx-auto px-md md:px-lg -mt-lg mb-section-gap relative z-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg items-start">
+<!-- Contact Form -->
+<div class="bg-surface-container-lowest p-md md:p-xl rounded-2xl shadow-[0px_10px_30px_rgba(29,43,66,0.06)]">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-lg">Wyślij wiadomość</h2>
+<form class="space-y-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Imię i nazwisko</label>
+<input class="w-full bg-white border border-border-soft rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all" placeholder="Jan Kowalski" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Email</label>
+<input class="w-full bg-white border border-border-soft rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all" placeholder="jan@przyklad.pl" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Telefon</label>
+<input class="w-full bg-white border border-border-soft rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all" placeholder="+48 000 000 000" type="tel"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Wiadomość</label>
+<textarea class="w-full bg-white border border-border-soft rounded-lg px-md py-sm focus:ring-2 focus:ring-secondary focus:border-secondary outline-none transition-all resize-none" placeholder="W czym możemy Ci pomóc?" rows="4"></textarea>
+</div>
+<button class="w-full bg-tertiary-fixed text-on-tertiary-fixed font-bold py-md rounded-full hover:shadow-lg transition-all transform active:scale-95" type="submit">
+                        Wyślij wiadomość
+                    </button>
+</form>
+</div>
+<!-- Contact Info Card -->
+<div class="bg-mint-surface p-md md:p-xl rounded-2xl h-full flex flex-col justify-between shadow-[0px_10px_30px_rgba(29,43,66,0.06)]">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-lg">Informacje kontaktowe</h2>
+<div class="space-y-lg">
+<div class="flex gap-md">
+<div class="bg-surface-container-lowest p-sm rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-secondary-fixed-variant">Adres</p>
+<p class="font-body-md text-body-md text-primary">ul. Sienkiewicza 15/4, 09-400 Płock</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="bg-surface-container-lowest p-sm rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">phone</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-secondary-fixed-variant">Telefon</p>
+<p class="font-body-md text-body-md text-primary">+48 123 456 789</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="bg-surface-container-lowest p-sm rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-secondary-fixed-variant">Email</p>
+<p class="font-body-md text-body-md text-primary">kontakt@poradnia-plock.pl</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="bg-surface-container-lowest p-sm rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-secondary-fixed-variant">Godziny otwarcia</p>
+<div class="font-body-md text-body-md text-primary space-y-base">
+<p>Pon - Pt: 08:00 - 18:00</p>
+<p>Sobota: 09:00 - 14:00</p>
+<p>Niedziela: Zamknięte</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-xl hidden md:block">
+<div class="p-md bg-white/20 rounded-xl backdrop-blur-sm border border-white/30">
+<p class="font-label-md text-label-md text-primary font-bold italic">"Twoje zdrowie zaczyna się od pierwszego kroku. Zróbmy go razem."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-[500px] bg-surface-container-high relative overflow-hidden diagonal-separator-up">
+<div class="absolute inset-0 flex items-center justify-center text-on-surface-variant z-10">
+<div class="text-center bg-white/80 backdrop-blur px-lg py-md rounded-2xl shadow-md pointer-events-none">
+<span class="material-symbols-outlined text-4xl mb-xs">map</span>
+<p class="font-headline-md text-headline-md">Mapa interaktywna</p>
+<p class="font-body-md text-body-md">ul. Sienkiewicza 15/4, Płock</p>
+</div>
+</div>
+<div class="w-full h-full bg-cover bg-center grayscale contrast-[0.8] brightness-[1.1] opacity-70" data-alt="A professional satellite and street map view of Płock, Poland, highlighting the urban layout with clean lines and a soft color palette that matches a healthcare aesthetic. The lighting is bright and clear, emphasizing a modern and accessible city environment. The visual style is crisp, high-resolution, and corporate, conveying trust and ease of navigation." data-location="Płock, Poland" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYYwUWD_pinsdHIYF-WW9vsmbGzVGwDCnKSzBjNdcz8mFiJSUtyzXR5G4S96w7Z7f2g2PcwFT1aOj4G_tvwSGMwbCsGddX_MYdTSL6Xxruo8JHLzuPO207dWlrEqD8edVLD3pdhmgWLSiRGR-J8mRfT3qaw6iAtpSWhqT6fkIPOrmENtnloaJIP5kkLBog0EK-ZBMQ66eYrBP8qZXM63a8Y9uz0fCLf75Zl7TrbO0mAQmng5YFbg_q')"></div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg w-full px-md md:px-lg py-xl max-w-7xl mx-auto">
+<div class="flex flex-col gap-md">
+<div class="font-headline-md text-headline-md font-bold text-on-primary">
+                    Poradnia Dietetyczna
+                </div>
+<p class="font-body-md text-body-md text-on-primary-container max-w-xs">
+                    Profesjonalne wsparcie w odchudzaniu i dietoterapii chorób. Zaufaj doświadczeniu.
+                </p>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-label-md text-label-md text-tertiary-fixed">Nawigacja</h4>
+<div class="grid grid-cols-2 gap-sm">
+<a class="font-body-md text-body-md text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Pricing</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-tertiary-fixed transition-colors" href="#">Polityka Prywatności</a>
+</div>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-label-md text-label-md text-tertiary-fixed">Kontakt bezpośredni</h4>
+<div class="flex flex-col gap-sm font-body-md text-body-md text-on-primary-container">
+<span class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-sm">phone</span> +48 123 456 789
+                    </span>
+<span class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-sm">mail</span> kontakt@poradnia-plock.pl
+                    </span>
+<span class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-sm">location_on</span> Płock, ul. Sienkiewicza 15
+                    </span>
+</div>
+</div>
+</div>
+<div class="w-full border-t border-on-primary-container/20 py-md text-center px-md">
+<p class="font-label-sm text-label-sm text-on-primary-container">
+                © 2024 Poradnia Dietetyczna Elżbieta Chandoszko. Wszelkie prawa zastrzeżone.
+            </p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for form inputs
+        document.querySelectorAll('input, textarea').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.querySelector('label').classList.add('text-secondary');
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.querySelector('label').classList.remove('text-secondary');
+            });
+        });
+    </script>
+</body></html>
