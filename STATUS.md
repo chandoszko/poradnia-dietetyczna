@@ -27,7 +27,7 @@
 | **1** | Wywiad z Mamą (ankieta, kolory, dane) | ✅ Zakończona (20.07.2026) |
 | **2** | Strona informacyjna MVP — design Claude na branchu `test-claude-design` | ✅ Zakończona (21.07.2026) |
 | **3** | Deploy na Cloudflare Pages | ✅ Zakończona (21.07.2026) — https://poradnia-dietetyczna.pages.dev |
-| **4** | Wykończenie (favicon, SEO, Lighthouse) | 🔧 W trakcie — robots.txt, sitemap, Open Graph, Google Search Console dodane, czekamy na weryfikację sitemap |
+| **4** | Wykończenie (favicon, SEO, Lighthouse) | 🔧 W trakcie — dodane: robots.txt, sitemap, Open Graph, Google Analytics, Google Search Console |
 | **5** | Wykupienie domeny | ⏳ Do zrobienia |
 
 ---
@@ -73,12 +73,16 @@
 | — | Export statyczny (ZIP) do wysłania | ✅ Zrobione (21.07.2026) |
 | — | Deploy na Cloudflare Pages | ✅ Zrobione (21.07.2026) |
 
-### Następne kroki
+### Następne kroki (22.07.2026)
 
-1. Podmiana zdjęcia portretowego (jak mama dostarczy)
-2. Dodać logo (jak mama dostarczy)
-3. Poprawki designu (jeśli potrzebne)
-4. Wykupienie domeny (opcjonalnie)
+1. Polityka prywatności (podstrona)
+2. Polityka RODO (podstrona)
+3. Formularz kontaktowy
+4. Poprawić Accessibility do 95+ (Lighthouse)
+5. Strona 404 (błąd)
+6. Podmiana zdjęcia portretowego (jak mama dostarczy)
+7. Dodać logo (jak mama dostarczy)
+8. Wykupienie domeny (opcjonalnie)
 
 ---
 
@@ -93,11 +97,11 @@
 - Branch `main` — design single-page gotowy (5 sekcji)
 - Strona online: https://poradnia-dietetyczna.pages.dev
 - Auto-deploy z GitHuba na Cloudflare Pages
-- SEO: robots.txt ✅, sitemap.xml ✅, Open Graph ✅, Google Search Console ✅ (weryfikacja w toku)
+- SEO: robots.txt ✅, sitemap.xml ✅, Open Graph ✅, Google Search Console ✅, Google Analytics ✅
 - Lighthouse: Performance 99, Accessibility 93, Best Practices 100, SEO 100
-- Czekamy na zdjęcie portretowe mamy (~21.07)
+- Czekamy na zdjęcie portretowe mamy
 - Czekamy na logo
-- Następne kroki: podmiana zdjęcia, logo, wykupienie domeny
+- Jutro: Polityka prywatności, RODO, formularz kontaktowy, Accessibility
 
 ### Stack technologiczny
 

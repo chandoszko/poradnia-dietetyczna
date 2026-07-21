@@ -46,8 +46,17 @@
 - [x] Dodać meta tagi (robots.txt, sitemap.xml) ✅
 - [x] Dodać Open Graph meta tagi ✅
 - [x] Zarejestrować stronę w Google Search Console ✅ (weryfikacja sitemap w toku)
-- [ ] (Opcjonalnie) Dodać Google Analytics
+- [x] Dodać Google Analytics ✅ (G-BHZ19TD48F)
 - [x] Przejść test Lighthouse ✅ (99/93/100/100)
+
+## Do zrobienia jutro (22.07.2026)
+- [ ] Polityka prywatności (podstrona)
+- [ ] Polityka RODO (podstrona)
+- [ ] Formularz kontaktowy
+- [ ] Poprawić Accessibility do 95+ (Lighthouse)
+- [ ] Strona 404 (błąd)
+- [ ] Podmienić zdjęcie portretowe (jak mama dostarczy)
+- [ ] Dodać logo (jak mama dostarczy)
 
 ## Rozwój (po MVP)
 - [ ] Blog porad dietetycznych
