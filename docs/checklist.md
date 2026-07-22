@@ -54,7 +54,7 @@
 - [ ] Polityka RODO (podstrona)
 - [ ] Formularz kontaktowy
 - [ ] Poprawić Accessibility do 95+ (Lighthouse)
-- [ ] Strona 404 (błąd)
+- [x] Strona 404 (błąd) ✅
 - [ ] Podmienić zdjęcie portretowe (jak mama dostarczy)
 - [ ] Dodać logo (jak mama dostarczy)
 

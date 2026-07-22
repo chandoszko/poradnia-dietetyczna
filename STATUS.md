@@ -79,7 +79,7 @@
 2. Polityka RODO (podstrona)
 3. Formularz kontaktowy
 4. Poprawić Accessibility do 95+ (Lighthouse)
-5. Strona 404 (błąd)
+5. Strona 404 (błąd) ✅ ZROBIONE
 6. Podmiana zdjęcia portretowego (jak mama dostarczy)
 7. Dodać logo (jak mama dostarczy)
 8. Wykupienie domeny (opcjonalnie)
