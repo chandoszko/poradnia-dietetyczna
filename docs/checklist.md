@@ -49,9 +49,15 @@
 - [x] Dodać Google Analytics ✅ (G-BHZ19TD48F)
 - [x] Przejść test Lighthouse ✅ (99/93/100/100)
 
-## Do zrobienia jutro (22.07.2026)
-- [ ] Polityka prywatności (podstrona)
-- [ ] Polityka RODO (podstrona)
+## Zrobione (24.07.2026)
+- [x] Polityka prywatności ✅
+- [x] RODO (klauzula informacyjna) ✅
+- [x] Automatyczny sitemap (@astrojs/sitemap) ✅
+- [x] Pełna nazwa firmy w stopce z CEIDG ✅
+
+## Do zrobienia
+- [x] Polityka prywatności (podstrona) ✅
+- [x] Polityka RODO (podstrona) ✅
 - [ ] Formularz kontaktowy
 - [ ] Poprawić Accessibility do 95+ (Lighthouse)
 - [x] Strona 404 (błąd) ✅

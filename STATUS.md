@@ -84,6 +84,13 @@
 7. Dodać logo (jak mama dostarczy)
 8. Wykupienie domeny (opcjonalnie)
 
+### Zrobione 22.07
+- [x] Strona 404 (błąd) ✅
+- [x] Tag "Kliniczna" → "Metaboliczna" ✅
+- [x] Usunięto "Dietetyka kliniczna" z footera ✅
+- [x] "Doświadczenie kliniczne" → "Doświadczenie" ✅
+- [x] Osadzono mapkę Google Maps z adresem w sekcji kontakt ✅
+
 ---
 
 ## Instrukcja po restarcie
@@ -99,9 +106,15 @@
 - Auto-deploy z GitHuba na Cloudflare Pages
 - SEO: robots.txt ✅, sitemap.xml ✅, Open Graph ✅, Google Search Console ✅, Google Analytics ✅
 - Lighthouse: Performance 99, Accessibility 93, Best Practices 100, SEO 100
+- Strona 404 zdefiniowana ✅
+- Mapa Google osadzona w sekcji kontakt ✅
 - Czekamy na zdjęcie portretowe mamy
 - Czekamy na logo
-- Jutro: Polityka prywatności, RODO, formularz kontaktowy, Accessibility
+- Polityka prywatności ✅ (24.07)
+- RODO ✅ (24.07)
+- Automatyczny sitemap (@astrojs/sitemap) ✅
+- Pełna nazwa firmy w stopce z CEIDG ✅
+- Następne: formularz kontaktowy, Accessibility
 
 ### Stack technologiczny
 
