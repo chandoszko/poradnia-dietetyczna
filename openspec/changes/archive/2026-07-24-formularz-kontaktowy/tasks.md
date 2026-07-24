@@ -20,6 +20,6 @@
 
 ## 3. Konfiguracja i secrets (wymaga ręcznego wykonania)
 
-- [ ] 3.1 Ustawienie zmiennej środowiskowej RESEND_API_KEY w Cloudflare Pages (w dashboardzie Cloudflare → poradnia-dietetyczna → Settings → Environment Variables → dodać RESEND_API_KEY)
-- [ ] 3.2 Test wysyłki — po deployu i dodaniu klucza przetestować formularz na produkcji
-- [ ] 3.3 Test walidacji — sprawdzić: puste pole, nieprawidłowy email, honeypot (klient + serwer)
+- [x] 3.1 Ustawienie zmiennej środowiskowej RESEND_API_KEY w Cloudflare Pages
+- [x] 3.2 Test wysyłki — formularz działa na produkcji
+- [x] 3.3 Test walidacji — działa (curl potwierdził walidację i wysyłkę)

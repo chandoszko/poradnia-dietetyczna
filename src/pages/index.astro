@@ -283,7 +283,7 @@ import Layout from '../layouts/Layout.astro';
             <button type="submit" id="submitBtn"
               class="btn-primary w-full py-3.5 text-[1rem] font-bold rounded-lg flex items-center justify-center gap-2">
               <span id="submitText">Wyślij wiadomość</span>
-              <span id="submitSpinner" class="hidden inline-block w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+              <span id="submitSpinner" class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full"></span>
             </button>
             <div id="formFeedback" class="hidden text-[0.9rem] font-medium p-4 rounded-lg"></div>
           </form>
@@ -314,9 +314,11 @@ import Layout from '../layouts/Layout.astro';
       const submitBtn = document.getElementById("submitBtn") as HTMLButtonElement | null;
       const submitText = document.getElementById("submitText") as HTMLSpanElement | null;
       const submitSpinner = document.getElementById("submitSpinner") as HTMLSpanElement | null;
+      let feedbackTimeout: ReturnType<typeof setTimeout> | null = null;
 
       function showFeedback(message: string, type: "success" | "error") {
         if (!feedback) return;
+        if (feedbackTimeout) clearTimeout(feedbackTimeout);
         feedback.textContent = message;
         feedback.className = `text-[0.9rem] font-medium p-4 rounded-lg ${
           type === "success"
@@ -324,18 +326,28 @@ import Layout from '../layouts/Layout.astro';
             : "bg-red-50 text-red-700"
         }`;
         feedback.classList.remove("hidden");
+        feedbackTimeout = setTimeout(() => {
+          feedback.classList.add("hidden");
+        }, 120000);
       }
 
       function setLoading(loading: boolean) {
         if (!submitBtn || !submitText || !submitSpinner) return;
         submitBtn.disabled = loading;
         submitText.classList.toggle("hidden", loading);
-        submitSpinner.classList.toggle("hidden", !loading);
+        if (loading) {
+          submitSpinner.classList.remove("hidden");
+          submitSpinner.classList.add("inline-block", "animate-spin");
+        } else {
+          submitSpinner.classList.add("hidden");
+          submitSpinner.classList.remove("inline-block", "animate-spin");
+        }
       }
 
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
         if (!feedback) return;
+        if (feedbackTimeout) clearTimeout(feedbackTimeout);
         feedback.classList.add("hidden");
         setLoading(true);
 
