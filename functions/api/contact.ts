@@ -88,7 +88,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
   try {
     const resend = new Resend(apiKey);
     await resend.emails.send({
-      from: "Poradnia Dietetyczna <formularz@poradnia-dietetyczna.pages.dev>",
+      from: "Poradnia Dietetyczna <onboarding@resend.dev>",
       to: "elzbietachan@gmail.com",
       replyTo: body.email,
       subject: `[Formularz] ${body.subject}`,
