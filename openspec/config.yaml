@@ -1,0 +1,21 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+context: |
+  Framework: Astro 7, TailwindCSS 4
+  Node: >=22.12.0
+  Dev server: astro dev --background
+  Domain: poradnia dietetyczna (dietary clinic) - strona informacyjna dla Mamy
+  Język: polski
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours

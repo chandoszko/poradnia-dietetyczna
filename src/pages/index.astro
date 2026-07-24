@@ -225,13 +225,13 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Kontakt -->
   <section class="relative py-[100px] bg-mietowy-light" id="kontakt">
-    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-[60px] items-start">
+    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-[60px] items-start">
       <div>
         <p class="text-morska-ziel-dark font-semibold text-[0.9rem] uppercase tracking-[2px] mb-2">Zapraszam do kontaktu</p>
         <h2 class="font-heading text-[2.4rem] text-granat mb-4">Gdzie mnie znajdziesz</h2>
-        <p class="text-text-body mb-8">Masz pytania przed wizytą? Zadzwoń lub napisz — chętnie odpowiem.</p>
+        <p class="text-text-body mb-8">Masz pytania przed wizytą? Zadzwoń, napisz lub wypełnij formularz — chętnie odpowiem.</p>
 
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6 mb-10">
           <div class="flex gap-4 items-start">
             <span class="text-[1.5rem] flex-shrink-0 mt-0.5">&#128205;</span>
             <div>
@@ -254,9 +254,43 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
         </div>
+
+        <div class="bg-white rounded-xl p-8 shadow-sm border border-border-light">
+          <h3 class="text-[1.3rem] font-semibold text-granat mb-2">Napisz do mnie</h3>
+          <p class="text-text-body text-[0.9rem] mb-6">Odpowiem najszybciej jak to możliwe.</p>
+          <form id="contactForm" class="flex flex-col gap-5">
+            <input type="text" name="_hp" class="hidden" tabindex="-1" autocomplete="off">
+            <div>
+              <label for="name" class="block text-[0.9rem] font-medium text-granat mb-1.5">Imię i nazwisko</label>
+              <input type="text" id="name" name="name" required minlength="2" placeholder="Twoje imię"
+                class="w-full px-4 py-3 rounded-lg border border-border-light bg-mietowy-light/30 text-granat text-[0.95rem] placeholder:text-text-muted focus:outline-none focus:border-morska-ziel-dark focus:ring-1 focus:ring-morska-ziel-dark transition-colors">
+            </div>
+            <div>
+              <label for="email" class="block text-[0.9rem] font-medium text-granat mb-1.5">Adres email</label>
+              <input type="email" id="email" name="email" required placeholder="Twój email"
+                class="w-full px-4 py-3 rounded-lg border border-border-light bg-mietowy-light/30 text-granat text-[0.95rem] placeholder:text-text-muted focus:outline-none focus:border-morska-ziel-dark focus:ring-1 focus:ring-morska-ziel-dark transition-colors">
+            </div>
+            <div>
+              <label for="subject" class="block text-[0.9rem] font-medium text-granat mb-1.5">Temat</label>
+              <input type="text" id="subject" name="subject" required minlength="3" placeholder="Czego dotyczy Twoja wiadomość?"
+                class="w-full px-4 py-3 rounded-lg border border-border-light bg-mietowy-light/30 text-granat text-[0.95rem] placeholder:text-text-muted focus:outline-none focus:border-morska-ziel-dark focus:ring-1 focus:ring-morska-ziel-dark transition-colors">
+            </div>
+            <div>
+              <label for="message" class="block text-[0.9rem] font-medium text-granat mb-1.5">Wiadomość</label>
+              <textarea id="message" name="message" required minlength="10" rows="5" placeholder="Twoja wiadomość..."
+                class="w-full px-4 py-3 rounded-lg border border-border-light bg-mietowy-light/30 text-granat text-[0.95rem] placeholder:text-text-muted focus:outline-none focus:border-morska-ziel-dark focus:ring-1 focus:ring-morska-ziel-dark transition-colors resize-y"></textarea>
+            </div>
+            <button type="submit" id="submitBtn"
+              class="btn-primary w-full py-3.5 text-[1rem] font-bold rounded-lg flex items-center justify-center gap-2">
+              <span id="submitText">Wyślij wiadomość</span>
+              <span id="submitSpinner" class="hidden inline-block w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+            </button>
+            <div id="formFeedback" class="hidden text-[0.9rem] font-medium p-4 rounded-lg"></div>
+          </form>
+        </div>
       </div>
 
-      <div class="relative rounded-xl overflow-hidden h-[400px]">
+      <div class="relative rounded-xl overflow-hidden h-[400px] lg:sticky lg:top-[100px]">
         <iframe
           src="https://www.google.com/maps?q=Dworcowa+25a+P%C5%82ock&output=embed"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -272,4 +306,67 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <script>
+    const form = document.getElementById("contactForm") as HTMLFormElement | null;
+    if (form) {
+      const feedback = document.getElementById("formFeedback") as HTMLDivElement | null;
+      const submitBtn = document.getElementById("submitBtn") as HTMLButtonElement | null;
+      const submitText = document.getElementById("submitText") as HTMLSpanElement | null;
+      const submitSpinner = document.getElementById("submitSpinner") as HTMLSpanElement | null;
+
+      function showFeedback(message: string, type: "success" | "error") {
+        if (!feedback) return;
+        feedback.textContent = message;
+        feedback.className = `text-[0.9rem] font-medium p-4 rounded-lg ${
+          type === "success"
+            ? "bg-limonka/20 text-granat"
+            : "bg-red-50 text-red-700"
+        }`;
+        feedback.classList.remove("hidden");
+      }
+
+      function setLoading(loading: boolean) {
+        if (!submitBtn || !submitText || !submitSpinner) return;
+        submitBtn.disabled = loading;
+        submitText.classList.toggle("hidden", loading);
+        submitSpinner.classList.toggle("hidden", !loading);
+      }
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!feedback) return;
+        feedback.classList.add("hidden");
+        setLoading(true);
+
+        const data = {
+          _hp: (form.querySelector("[name='_hp']") as HTMLInputElement)?.value || "",
+          name: (form.querySelector("[name='name']") as HTMLInputElement)?.value.trim() || "",
+          email: (form.querySelector("[name='email']") as HTMLInputElement)?.value.trim() || "",
+          subject: (form.querySelector("[name='subject']") as HTMLInputElement)?.value.trim() || "",
+          message: (form.querySelector("[name='message']") as HTMLTextAreaElement)?.value.trim() || "",
+        };
+
+        try {
+          const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+          const json = await res.json();
+
+          if (res.ok && json.success) {
+            showFeedback("Wiadomość wysłana! Odpowiem najszybciej jak to możliwe.", "success");
+            form.reset();
+          } else {
+            showFeedback(json.error || "Przepraszamy, wystąpił błąd. Spróbuj ponownie później lub zadzwoń.", "error");
+          }
+        } catch {
+          showFeedback("Przepraszamy, wystąpił błąd. Spróbuj ponownie później lub zadzwoń.", "error");
+        } finally {
+          setLoading(false);
+        }
+      });
+    }
+  </script>
 </Layout>
