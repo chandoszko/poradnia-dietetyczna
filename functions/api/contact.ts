@@ -89,7 +89,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     const resend = new Resend(apiKey);
     await resend.emails.send({
       from: "Poradnia Dietetyczna <onboarding@resend.dev>",
-      to: "elzbietachan@gmail.com",
+      to: "chandoszko@gmail.com",
       replyTo: body.email,
       subject: `[Formularz] ${body.subject}`,
       html: `
